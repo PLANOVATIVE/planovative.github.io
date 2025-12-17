@@ -12,28 +12,29 @@
 <body>
     <div id="root">
 		<div class="min-h-screen bg-white">
-		<div id="top-buttons" class="fixed top-4 right-4 z-20 flex gap-4">
-          <button 
-            onClick="goToURL('https://planovative.ca/true-network')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >Our Startup Product
-          </button>
-		  <button 
-            onClick="scrollToSection('about')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >About Us
-          </button>
-          <button 
-            onClick="scrollToSection('services')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >Areas of Expertise
-          </button>
-          <button 
-            onClick="scrollToSection('partners')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >Our Partners and Clients
-          </button>
-        </div>
+		<div id="top-buttons" class="fixed top-4 right-4 z-20">
+		  <div class="flex gap-4">
+		    <button
+		      onClick="goToURL('https://planovative.ca/true-network')"
+		      class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+		    >Our Startup Product</button>
+		
+		    <button
+		      onClick="scrollToSection('about')"
+		      class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+		    >About Us</button>
+		
+		    <button
+		      onClick="scrollToSection('services')"
+		      class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+		    >Areas of Expertise</button>
+		
+		    <button
+		      onClick="scrollToSection('partners')"
+		      class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+		    >Our Partners and Clients</button>
+		  </div>
+		</div>
 		<div class="relative h-screen flex items-center" 
      		style="background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80'); 
             	background-size: cover; background-position: center center;">
@@ -431,6 +432,7 @@ updateNavVisibility();
     </script>
 </body>
 </html>					
+
 
 
 
