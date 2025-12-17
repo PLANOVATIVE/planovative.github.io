@@ -11,12 +11,18 @@
 </head>
 <body>
     <div id="root">
-	  <div class="min-h-screen bg-white">
-	    <div
-	      id="top-buttons"
-	      class="fixed top-0 left-0 right-0 z-30 bg-white/90 backdrop-blur-sm
-	             flex flex-wrap justify-center gap-2 px-2 py-2 shadow-sm"
-	    >
+	    <div class="min-h-screen bg-white">
+	
+	      <!-- Fixed top navigation -->
+	      <header
+	        id="top-buttons"
+	        class="fixed top-0 left-0 right-0 z-30
+	               bg-white/90 backdrop-blur-sm
+	               flex flex-wrap justify-center gap-2
+	               px-2 py-2 shadow-sm"
+	        role="navigation"
+	        aria-label="Primary"
+	      >
 	      <div class="flex flex-wrap justify-center gap-2">
 	        <button
 		      onClick="goToURL('https://planovative.ca/true-network')"
@@ -437,6 +443,7 @@ updateNavVisibility();
     </script>
 </body>
 </html>					
+
 
 
 
