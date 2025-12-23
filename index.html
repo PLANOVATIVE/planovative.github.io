@@ -1,0 +1,480 @@
+<!doctype html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planovative</title>
+	<link rel="icon" href="assets/planovative-icon.png" type="image/x-icon">
+	<style>
+*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{top:0;right:0;bottom:0;left:0}.right-4{right:1rem}.top-4{top:1rem}.z-10{z-index:10}.z-20{z-index:20}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-screen{height:100vh}.min-h-screen{min-height:100vh}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1{gap:.25rem}.gap-12{gap:3rem}.gap-2{gap:.5rem}.gap-4{gap:1rem}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse: 0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-blue-200{--tw-border-opacity: 1;border-color:rgb(191 219 254 / var(--tw-border-opacity))}.border-green-200{--tw-border-opacity: 1;border-color:rgb(187 247 208 / var(--tw-border-opacity))}.border-purple-200{--tw-border-opacity: 1;border-color:rgb(233 213 255 / var(--tw-border-opacity))}.bg-black\/60{background-color:#0009}.bg-gray-50{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity))}.bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.bg-orange-500{--tw-bg-opacity: 1;background-color:rgb(249 115 22 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-white\/90{background-color:#ffffffe6}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from: #eff6ff var(--tw-gradient-from-position);--tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-50{--tw-gradient-from: #f0fdf4 var(--tw-gradient-from-position);--tw-gradient-to: rgb(240 253 244 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-50{--tw-gradient-from: #faf5ff var(--tw-gradient-from-position);--tw-gradient-to: rgb(250 245 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-100{--tw-gradient-to: #dbeafe var(--tw-gradient-to-position)}.to-green-100{--tw-gradient-to: #dcfce7 var(--tw-gradient-to-position)}.to-purple-100{--tw-gradient-to: #f3e8ff var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-8{padding:2rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:.05em}.text-blue-600{--tw-text-opacity: 1;color:rgb(37 99 235 / var(--tw-text-opacity))}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-green-600{--tw-text-opacity: 1;color:rgb(22 163 74 / var(--tw-text-opacity))}.text-orange-50{--tw-text-opacity: 1;color:rgb(255 247 237 / var(--tw-text-opacity))}.text-orange-500{--tw-text-opacity: 1;color:rgb(249 115 22 / var(--tw-text-opacity))}.text-purple-600{--tw-text-opacity: 1;color:rgb(147 51 234 / var(--tw-text-opacity))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur: blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.hover\:bg-orange-50:hover{--tw-bg-opacity: 1;background-color:rgb(255 247 237 / var(--tw-bg-opacity))}.hover\:bg-orange-600:hover{--tw-bg-opacity: 1;background-color:rgb(234 88 12 / var(--tw-bg-opacity))}.hover\:underline:hover{text-decoration-line:underline}.hover\:shadow-md:hover{--tw-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:text-8xl{font-size:6rem;line-height:1}}
+	</style>
+</head>
+<body>
+    <div id="root">
+		<div class="min-h-screen bg-white">
+		<div id="top-buttons" class="fixed top-4 right-4 z-20 flex gap-4">
+          <button 
+            onClick="goToURL('https://planovative.ca/true-network')"
+            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+          >Our Startup Product
+          </button>
+		  <button 
+            onClick="scrollToSection('about')"
+            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+          >About Us
+          </button>
+          <button 
+            onClick="scrollToSection('services')"
+            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+          >Areas of Expertise
+          </button>
+          <button 
+            onClick="scrollToSection('partners')"
+            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
+          >Our Partners and Clients
+          </button>
+        </div>
+		
+		<div class="relative h-screen flex items-center" 
+     		style="background-image: url('https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/Planovativehero3.png');
+            	background-size: cover; background-position: center; background-repeat: no-repeat">
+  
+  		 <div class="absolute inset-0 bg-black/65"></div>
+
+ 		 <div class="container mx-auto px-6 relative z-10 text-center">    
+		  <div class="flex flex-col items-center mb-12">
+		    <img src="planovative-just-logo.png" alt="Planovative Logo">
+		    <p class="text-4xl text-orange-500 font-semibold tracking-wider">
+		      DATA. INNOVATION. PLANNING.
+		    </p>
+		    </p>
+		  </div>
+
+          <p class="text-2xl md:text-4xl text-gray-200 font-bold mb-6 mx-auto text-center">
+            From problem diagnosis to scalable solutions
+          </p>
+
+          <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">
+            Expert planning consulting and productized analytics tools that help communities and authorities plan with clarity and confidence.
+          </p>
+
+          <div class="flex md:flex-row justify-center gap-4 md:gap-6 mt-6">
+			  <!-- Button 1 -->
+			  <button 
+			    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold 
+			           flex items-center gap-2 transition-all"
+			    id="explore"
+			  >
+			    Explore Services
+			    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" 
+			         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+			         class="w-5 h-5">
+			      <path d="M5 12h14"></path>
+			      <path d="m12 5 7 7-7 7"></path>
+			    </svg>
+			  </button>
+			
+			  <!-- Button 2 -->
+			  <a 
+			    href="https://planovative.ca/true-network"
+			    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold 
+			           flex items-center gap-2 transition-all"
+			  >
+			    Explore Products
+			    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" 
+			         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+			         class="w-5 h-5">
+			      <path d="M5 12h14"></path>
+			      <path d="m12 5 7 7-7 7"></path>
+			    </svg>
+			  </a>
+			
+			</div>
+
+       </div>
+    </div>
+			
+				<div id="about" class="py-24 bg-gray-50">
+					<div class="container mx-auto px-6">
+						<div class="max-w-7xl mx-auto">
+							<h2 class="text-4xl font-bold mb-6 text-center text-gray-900">About Us</h2>
+							<div class="max-w-7xl mx-auto bg-gray-50 p-10">
+							 <div class="grid md:grid-cols-3 gap-12 md:gap-16">
+								 <!-- Column 1 -->
+								 <div class="bg-white p-8 rounded-xl">
+								  <div class="flex items-center mb-4">
+								    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-500 flex-shrink-0" style="margin-right: 12px;" <!--="" this="" creates="" the="" space="" --="">
+								    &gt;
+								      <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+								      <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+								      <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+								      <path d="M10 6h4"></path>
+								      <path d="M10 10h4"></path>
+								      <path d="M10 14h4"></path>
+								      <path d="M10 18h4"></path>
+								    </svg>
+								
+								    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-500 leading-snug">
+								      Our Vision
+								    </h3>
+								  </div>
+
+								  <p class="text-2xl text-gray-700 leading-relaxed text-left">
+								    A future where every Canadian community is sustainable, inclusive, resilient, and empowered through innovative planning, meaningful collaboration, and data-driven insight.
+								  </p>
+								</div>
+
+								    <!-- Column 2 -->
+								<div class="bg-white p-8 rounded-xl">
+								  <div class="flex items-center mb-4">
+								
+								    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-500 flex-shrink-0" style="margin-right: 12px;" <!--="" spacing="" fix="" --="">
+								    &gt;
+								      <path d="M3 3v18h18"></path>
+								      <path d="M18 17V9"></path>
+								      <path d="M13 17V5"></path>
+								      <path d="M8 17v-3"></path>
+								    </svg>
+								
+								    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-500 leading-snug">
+								      Our Mission
+								    </h3>
+								
+								  </div>
+								
+								  <p class="text-2xl text-gray-700 leading-relaxed text-left">
+								    Planovative advances sustainable community and regional development across Canada by integrating evidence-based planning, advanced geospatial technologies, and human-centered design. We collaborate with public, private, and non-profit sectors to deliver strategic, data-informed solutions that strengthen community well-being, support economic resilience, and foster long-term environmental stewardship.
+								  </p>
+								</div>
+
+								    <!-- Column 3 -->
+								<div class="bg-white p-8 rounded-xl">
+								  <div class="flex items-center mb-4">
+								
+								    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-500 flex-shrink-0" style="margin-right: 12px;" <!--="" spacing="" fix="" --="">
+								    &gt;
+								      <path d="M18 21a8 8 0 0 0-16 0"></path>
+								      <circle cx="10" cy="8" r="5"></circle>
+								      <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
+								    </svg>
+								
+								    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-500 leading-snug">
+								      Our Promise
+								    </h3>
+								
+								  </div>
+								
+								  <p class="text-2xl text-gray-700 leading-relaxed text-left">
+								    We partner with communities, organizations, and institutions to deliver sustainable, equitable, and forward-thinking outcomes. Honoring local character and community voices, we apply rigorous analysis, creative problem-solving, and collaborative engagement to support development goals while protecting environmental integrity and advancing social well-being.
+								  </p>
+								</div>
+							  </div>
+							</div>
+					    </div>
+ 					 </div>
+					</div>
+                </div>
+			</div>
+
+      </div>
+
+			<div id="services" class="py-18 bg-gray-50"><div class="container mx-auto px-6"><h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Areas of Expertise</h2>
+			<div class="grid md:grid-cols-3 gap-12">
+			
+		<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+		  <!-- Banner Image -->
+		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
+		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/extreme%20heat.png"
+		         class="w-full h-48 object-cover rounded-t-xl"
+		         alt="Climate Risk Map">
+		   </div>
+		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
+		     Climate Risk, Social Vulnerability, and Emergency Preparedness
+		   </h3>
+ 		   <p class="text-gray-600">
+				Planovative leverages advanced GIS analytics, climate projections, and evidence-based 
+			    methodologies to evaluate community risk and strengthen resilience to extreme heat, flooding, 
+			    wildfire, and other hazards. We help municipalities and community-based organizations understand 
+			    how climate hazards intersect with social vulnerability and critical infrastructure, ensuring 
+			    equitable and informed planning outcomes. Through system development, interactive mapping, and 
+			    collaborative engagement, we design risk assessment tools and proactive emergency preparedness 
+			    strategies that protect people, services, and assets across Canada.
+			</p>
+			</div>
+			
+			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+		  <!-- Banner Image -->
+		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
+		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/landuse.png"
+		         class="w-full h-48 object-cover rounded-t-xl"
+		         alt="Climate Risk Map">
+		   </div>
+		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
+		     Complete Communities and Official Community Plan (OCP) Updates
+		   </h3>
+ 		   <p class="text-gray-600">
+				Planovative supports long-range planning by developing multi-criteria decision-making frameworks 
+			    and updating Official Community Plans rooted in the principles of complete, connected, and resilient 
+			    communities. We help municipalities and non-profit organizations evaluate and align land use, housing, transportation, 
+			    infrastructure, and climate considerations using geospatial analysis, scenario testing, and policy 
+			    review to guide sustainable growth. Our team collaborates with staff, elected officials, and 
+			    community members to produce evidence-based strategies, maps, and implementation tools that reflect 
+			    local priorities, equity objectives, and long-term needs across diverse communities in Canada. 
+			</p>
+			</div>
+			
+			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+		  <!-- Banner Image -->
+		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
+		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/socialinfrustructure.png"
+		         class="w-full h-48 object-cover rounded-t-xl"
+		         alt="Climate Risk Map">
+		   </div>
+		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
+		     Social Service and Infrastructure Planning
+		   </h3>
+ 		   <p class="text-gray-600">
+				Planovative applies advanced geospatial analytics, spatial accessibility modeling, and 
+			    equity-based statistical assessment to evaluate how communities access essential social 
+			    and public services. We identify service gaps, unmet needs, and structural barriers in 
+			    underserved areas by integrating demographic, socio-economic, mobility, and infrastructure 
+			    datasets. Our team develops data-driven decision-support frameworks that help municipalities 
+			    and community organizations prioritize investments, optimize service delivery, and plan 
+			    resilient, people-centered community infrastructure systems. Through technical expertise 
+			    and collaborative engagement, we strengthen equity, improve well-being, and support 
+			    sustainable long-term service networks across Canada. 
+			</p>
+			</div>
+			
+			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+		  <!-- Banner Image -->
+		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
+		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/mobility.png"
+		         class="w-full h-48 object-cover rounded-t-xl"
+		         alt="Climate Risk Map">
+		   </div>
+		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
+		     Mobility and Active Transportation
+		   </h3>
+ 		   <p class="text-gray-600">
+				Planovative designs evidence-based mobility and active transportation plans that support
+    			safe, sustainable, and equitable travel choices across communities. Using advanced
+   				geospatial analytics, network modeling, artificial intelligence, machine learning, and
+ 				computer vision techniques, we evaluate and optimize multimodal transportation systems—
+                including public transit, walking, cycling, paratransit, and accessibility services. Our
+			    team identifies infrastructure gaps, models future demand, and assesses the performance
+			    and equity impacts of mobility networks to guide investment and policy decisions. Through
+			    collaborative engagement, data-driven analysis, and scenario testing, we help
+  			    municipalities plan integrated, resilient, and people-centered transportation systems
+ 			   that improve connectivity, reduce barriers, and enhance long-term community well-being.</p>
+			</div>
+			
+			
+			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+		  <!-- Banner Image -->
+		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
+		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/suitabilitystudies.png"
+		         class="w-full h-48 object-cover rounded-t-xl"
+		         alt="Climate Risk Map">
+		   </div>
+		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
+		     Suitability Analysis for Land Use, Housing and Business Development
+		   </h3>
+ 		   <p class="text-gray-600">
+				 Planovative delivers advanced land-use suitability and site selection analysis to support
+   				 housing (market and non-market), tourism, industrial, and business development decisions.
+   				 Using geospatial analytics and multi-criteria decision-making frameworks, we integrate policy
+   				 constraints, infrastructure capacity, environmental conditions, hazard risk, market access,
+   				 and community priorities to identify high-potential locations and reduce planning uncertainty.
+   				 Our work helps municipalities and organizations compare scenarios, evaluate trade-offs, and
+   				 prioritize investments with clear, defensible evidence. Through data-driven mapping,
+   				 decision-support tools, and collaborative engagement, we enable practical, equitable, and
+   				 sustainable growth strategies tailored to local context across Canada.</p>
+			</div>
+			
+			
+			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+		  <!-- Banner Image -->
+		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
+		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/participatorymapping.png"
+		         class="w-full h-48 object-cover rounded-t-xl"
+		         alt="Climate Risk Map">
+		   </div>
+		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
+		     Participatory Mapping for Community Services and Funding Decisions
+		   </h3>
+ 		   <p class="text-gray-600">
+				 Planovative delivers participatory mapping projects that help community-based organizations,
+    			 funders, and partners collaboratively define service areas, identify community strengths and assets,
+			     and surface opportunities, threats, and gaps. Using structured facilitation, human-centered engagement,
+   				 and geospatial technologies, we combine local knowledge with relevant demographic, socio-economic, and
+ 				 service-access data to produce clear, defensible evidence. Our outputs include interactive maps,
+   				 shared spatial datasets, and decision-support summaries that strengthen program design, improve
+                 coordination across partners, and support equitable resource allocation. By translating lived
+                 experience into actionable insights, we help organizations plan strategically, communicate impact,
+                 and prioritize investments aligned with community needs.</p>
+			</div>
+				
+			</div></div></div>
+
+			<div class="py-24 bg-white">
+			  <div class="container mx-auto px-6">
+			    <div class="max-w-3xl mx-auto">
+			      <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">How we support our clients?</h2>
+			
+			      <div class="space-y-6">
+			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-orange-800">
+			          <p class="text-gray-700"><span class="font-semibold">Nonprofits and Community-Based Organizations: </span> We help nonprofits and community organizations evaluate service
+									          accessibility, identify unmet needs, and measure program impacts.
+									          Our analysis strengthens funding applications, advocacy efforts, and
+									          strategic planning through clear, equity-focused evidence.</p>
+			        </div>
+			
+			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+			          <p class="text-gray-700"> <span class="font-semibold"> Public Service Providers and Authorities: </span> We support transit agencies, health authorities, and emergency
+									          management organizations with spatial analysis, accessibility
+									          modeling, and system performance evaluation to improve service
+									          delivery, equity, and community resilience. </p>
+			        </div>
+			
+			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+			          <p class="text-gray-700"><span class="font-semibold"> Provincial and Federal Agencies: </span> We work with provincial ministries, Crown agencies, and federal
+									          departments to deliver policy analysis, climate risk assessments,
+									          program evaluation, and decision-support tools. By translating complex
+									          datasets into clear insights, we support effective program design,
+									          funding allocation, and long-term strategic planning.</p>
+			        </div>
+			
+			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+			          <p class="text-gray-700"><span class="font-semibold"> Municipalities and Regional Districts: </span> We support local governments across British Columbia and Canada with
+									          evidence-based community planning, climate resilience and hazard
+									          assessments, housing and infrastructure analysis, mobility and active
+									          transportation planning, and Official Community Plan (OCP) updates.
+									          Our work enables municipalities to make defensible, transparent
+									          decisions, prioritize investments, and align with provincial and
+									          federal policy requirements.</p></p>
+			        </div>
+					  
+					<div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+			          <p class="text-gray-700"><span class="font-semibold">Indigenous Governments and Organizations: </span> We partner with Indigenous governments and organizations to support
+          									   community-led planning, infrastructure and service needs assessments,
+                                               climate adaptation strategies, and capacity-building initiatives. Our
+                                               approach is collaborative, respectful, and grounded in data-informed
+                                               decision-making that supports long-term community priorities.</p></p>
+			        </div>
+
+					<div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+			          <p class="text-gray-700"><span class="font-semibold">Private-Sector Partners: </span> We collaborate with developers, infrastructure firms, and technology
+          										partners on suitability analysis, market research, and data-driven
+         										planning tools. Our work supports responsible development, regulatory
+         									    alignment, and sustainable investment decisions.</p></p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<div id="partners" class="py-24 bg-gray-50">
+			<div class="container mx-auto px-6">
+			<h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Our Clients and Partners</h2>
+			<p class="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">We collaborate with community based organizations (Charities and non for profits), municipalities, BC government and public service agencies to deliver innovative and systematic planning solutions.</p>
+			
+			<div class="grid md:grid-cols-3 gap-12"><div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200 hover:shadow-md transition-all"><h3 class="text-2xl font-bold mb-4 text-blue-600">Insightino</h3><p class="text-gray-700">Advanced data analytics and visualization solutions for business development.</p><div class="mt-6">
+			
+			</div></div><div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border border-green-200 hover:shadow-md transition-all"><h3 class="text-2xl font-bold mb-4 text-green-600">Twlvivo</h3><p class="text-gray-700">Deep domain expertise across a wide breadth of industries, markets, and positions. </p><div class="mt-6">
+			</div></div><div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200 hover:shadow-md transition-all"><h3 class="text-2xl font-bold mb-4 text-purple-600">United Way British Columbia</h3><p class="text-gray-700">Helping British Columbians tackle critical social issues, through local love.</p><div class="mt-6">
+			</div></div></div></div></div>
+			<footer class="bg-gray-900 text-gray-400 py-12">
+				<div class="container mx-auto px-6 text-center"><p>© 2025 Planovative. Shaping a resilient, vibrant, and prosperous future for British Columbians.</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+	    <script>
+          function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+function goToURL(u1) {
+  if (u1) {
+    window.location.href = u1;
+  }
+};
+
+let showNav = true;
+
+function updateNavVisibility() {
+  const aboutSection = document.getElementById('about')?.offsetTop || 0;
+  const servicesSection = document.getElementById('services')?.offsetTop || 0;
+  const partnersSection = document.getElementById('partners')?.offsetTop || 0;
+  const scrollPosition = window.scrollY + 100;
+
+  const shouldShow = scrollPosition < aboutSection ;
+
+  if (shouldShow !== showNav) {
+    showNav = shouldShow;
+    // Call your UI update logic here
+    document.getElementById('top-buttons').style.display = showNav ? 'flex' : 'none';
+  }
+}
+
+window.addEventListener('scroll', updateNavVisibility);
+
+// Optionally, trigger the function once on page load
+updateNavVisibility();
+
+		document.getElementById("explore").addEventListener("click", function() {
+            document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
