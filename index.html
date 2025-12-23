@@ -1,480 +1,985 @@
-<!doctype html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planovative</title>
-	<link rel="icon" href="assets/planovative-icon.png" type="image/x-icon">
-	<style>
-*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{top:0;right:0;bottom:0;left:0}.right-4{right:1rem}.top-4{top:1rem}.z-10{z-index:10}.z-20{z-index:20}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-screen{height:100vh}.min-h-screen{min-height:100vh}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1{gap:.25rem}.gap-12{gap:3rem}.gap-2{gap:.5rem}.gap-4{gap:1rem}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse: 0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-blue-200{--tw-border-opacity: 1;border-color:rgb(191 219 254 / var(--tw-border-opacity))}.border-green-200{--tw-border-opacity: 1;border-color:rgb(187 247 208 / var(--tw-border-opacity))}.border-purple-200{--tw-border-opacity: 1;border-color:rgb(233 213 255 / var(--tw-border-opacity))}.bg-black\/60{background-color:#0009}.bg-gray-50{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity))}.bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.bg-orange-500{--tw-bg-opacity: 1;background-color:rgb(249 115 22 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-white\/90{background-color:#ffffffe6}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from: #eff6ff var(--tw-gradient-from-position);--tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-50{--tw-gradient-from: #f0fdf4 var(--tw-gradient-from-position);--tw-gradient-to: rgb(240 253 244 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-50{--tw-gradient-from: #faf5ff var(--tw-gradient-from-position);--tw-gradient-to: rgb(250 245 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-100{--tw-gradient-to: #dbeafe var(--tw-gradient-to-position)}.to-green-100{--tw-gradient-to: #dcfce7 var(--tw-gradient-to-position)}.to-purple-100{--tw-gradient-to: #f3e8ff var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-8{padding:2rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:.05em}.text-blue-600{--tw-text-opacity: 1;color:rgb(37 99 235 / var(--tw-text-opacity))}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-green-600{--tw-text-opacity: 1;color:rgb(22 163 74 / var(--tw-text-opacity))}.text-orange-50{--tw-text-opacity: 1;color:rgb(255 247 237 / var(--tw-text-opacity))}.text-orange-500{--tw-text-opacity: 1;color:rgb(249 115 22 / var(--tw-text-opacity))}.text-purple-600{--tw-text-opacity: 1;color:rgb(147 51 234 / var(--tw-text-opacity))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur: blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.hover\:bg-orange-50:hover{--tw-bg-opacity: 1;background-color:rgb(255 247 237 / var(--tw-bg-opacity))}.hover\:bg-orange-600:hover{--tw-bg-opacity: 1;background-color:rgb(234 88 12 / var(--tw-bg-opacity))}.hover\:underline:hover{text-decoration-line:underline}.hover\:shadow-md:hover{--tw-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:text-8xl{font-size:6rem;line-height:1}}
-	</style>
-</head>
-<body>
-    <div id="root">
-		<div class="min-h-screen bg-white">
-		<div id="top-buttons" class="fixed top-4 right-4 z-20 flex gap-4">
-          <button 
-            onClick="goToURL('https://planovative.ca/true-network')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >Our Startup Product
-          </button>
-		  <button 
-            onClick="scrollToSection('about')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >About Us
-          </button>
-          <button 
-            onClick="scrollToSection('services')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >Areas of Expertise
-          </button>
-          <button 
-            onClick="scrollToSection('partners')"
-            class="w-auto max-w-fit bg-white/90 backdrop-blur-sm text-orange-500 px-6 py-2 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-sm"
-          >Our Partners and Clients
-          </button>
+  <head>
+    <title>TrueNetwork - Canada's First Community Knowledge Sharing and Network Intelligence Platform for Nonprofits Sector</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Connect with 137,000+ Canadian nonprofits. Find peers, funders, and proven solutions. Map your work to UN SDGs. Canada's first network intelligence platform." />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="assets/icon-finalized copy copy.png" alt="TrueNetwork" height="60" />
+          </div>
+          <nav class="nav-menu" aria-label="Main navigation">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+              <span class="hamburger"></span>
+            </button>
+            <ul class="nav-list">
+              <li><a href="#mission">Our Mission</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#sdgs">Frameworks</a></li>
+              <li><a href="#audience">Who It's For</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+              <a href="#" class="btn btn-secondary">Sign In</a>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </nav>
         </div>
-		
-		<div class="relative h-screen flex items-center" 
-     		style="background-image: url('https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/Planovativehero3.png');
-            	background-size: cover; background-position: center; background-repeat: no-repeat">
-  
-  		 <div class="absolute inset-0 bg-black/65"></div>
-
- 		 <div class="container mx-auto px-6 relative z-10 text-center">    
-		  <div class="flex flex-col items-center mb-12">
-		    <img src="planovative-just-logo.png" alt="Planovative Logo">
-		    <p class="text-4xl text-orange-500 font-semibold tracking-wider">
-		      DATA. INNOVATION. PLANNING.
-		    </p>
-		    </p>
-		  </div>
-
-          <p class="text-2xl md:text-4xl text-gray-200 font-bold mb-6 mx-auto text-center">
-            From problem diagnosis to scalable solutions
-          </p>
-
-          <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">
-            Expert planning consulting and productized analytics tools that help communities and authorities plan with clarity and confidence.
-          </p>
-
-          <div class="flex md:flex-row justify-center gap-4 md:gap-6 mt-6">
-			  <!-- Button 1 -->
-			  <button 
-			    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold 
-			           flex items-center gap-2 transition-all"
-			    id="explore"
-			  >
-			    Explore Services
-			    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" 
-			         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-			         class="w-5 h-5">
-			      <path d="M5 12h14"></path>
-			      <path d="m12 5 7 7-7 7"></path>
-			    </svg>
-			  </button>
-			
-			  <!-- Button 2 -->
-			  <a 
-			    href="https://planovative.ca/true-network"
-			    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold 
-			           flex items-center gap-2 transition-all"
-			  >
-			    Explore Products
-			    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" 
-			         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-			         class="w-5 h-5">
-			      <path d="M5 12h14"></path>
-			      <path d="m12 5 7 7-7 7"></path>
-			    </svg>
-			  </a>
-			
-			</div>
-
-       </div>
-    </div>
-			
-				<div id="about" class="py-24 bg-gray-50">
-					<div class="container mx-auto px-6">
-						<div class="max-w-7xl mx-auto">
-							<h2 class="text-4xl font-bold mb-6 text-center text-gray-900">About Us</h2>
-							<div class="max-w-7xl mx-auto bg-gray-50 p-10">
-							 <div class="grid md:grid-cols-3 gap-12 md:gap-16">
-								 <!-- Column 1 -->
-								 <div class="bg-white p-8 rounded-xl">
-								  <div class="flex items-center mb-4">
-								    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-500 flex-shrink-0" style="margin-right: 12px;" <!--="" this="" creates="" the="" space="" --="">
-								    &gt;
-								      <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
-								      <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
-								      <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
-								      <path d="M10 6h4"></path>
-								      <path d="M10 10h4"></path>
-								      <path d="M10 14h4"></path>
-								      <path d="M10 18h4"></path>
-								    </svg>
-								
-								    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-500 leading-snug">
-								      Our Vision
-								    </h3>
-								  </div>
-
-								  <p class="text-2xl text-gray-700 leading-relaxed text-left">
-								    A future where every Canadian community is sustainable, inclusive, resilient, and empowered through innovative planning, meaningful collaboration, and data-driven insight.
-								  </p>
-								</div>
-
-								    <!-- Column 2 -->
-								<div class="bg-white p-8 rounded-xl">
-								  <div class="flex items-center mb-4">
-								
-								    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-500 flex-shrink-0" style="margin-right: 12px;" <!--="" spacing="" fix="" --="">
-								    &gt;
-								      <path d="M3 3v18h18"></path>
-								      <path d="M18 17V9"></path>
-								      <path d="M13 17V5"></path>
-								      <path d="M8 17v-3"></path>
-								    </svg>
-								
-								    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-500 leading-snug">
-								      Our Mission
-								    </h3>
-								
-								  </div>
-								
-								  <p class="text-2xl text-gray-700 leading-relaxed text-left">
-								    Planovative advances sustainable community and regional development across Canada by integrating evidence-based planning, advanced geospatial technologies, and human-centered design. We collaborate with public, private, and non-profit sectors to deliver strategic, data-informed solutions that strengthen community well-being, support economic resilience, and foster long-term environmental stewardship.
-								  </p>
-								</div>
-
-								    <!-- Column 3 -->
-								<div class="bg-white p-8 rounded-xl">
-								  <div class="flex items-center mb-4">
-								
-								    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-500 flex-shrink-0" style="margin-right: 12px;" <!--="" spacing="" fix="" --="">
-								    &gt;
-								      <path d="M18 21a8 8 0 0 0-16 0"></path>
-								      <circle cx="10" cy="8" r="5"></circle>
-								      <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
-								    </svg>
-								
-								    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-500 leading-snug">
-								      Our Promise
-								    </h3>
-								
-								  </div>
-								
-								  <p class="text-2xl text-gray-700 leading-relaxed text-left">
-								    We partner with communities, organizations, and institutions to deliver sustainable, equitable, and forward-thinking outcomes. Honoring local character and community voices, we apply rigorous analysis, creative problem-solving, and collaborative engagement to support development goals while protecting environmental integrity and advancing social well-being.
-								  </p>
-								</div>
-							  </div>
-							</div>
-					    </div>
- 					 </div>
-					</div>
-                </div>
-			</div>
-
       </div>
+    </header>
 
-			<div id="services" class="py-18 bg-gray-50"><div class="container mx-auto px-6"><h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Areas of Expertise</h2>
-			<div class="grid md:grid-cols-3 gap-12">
-			
-		<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-		  <!-- Banner Image -->
-		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
-		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/extreme%20heat.png"
-		         class="w-full h-48 object-cover rounded-t-xl"
-		         alt="Climate Risk Map">
-		   </div>
-		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
-		     Climate Risk, Social Vulnerability, and Emergency Preparedness
-		   </h3>
- 		   <p class="text-gray-600">
-				Planovative leverages advanced GIS analytics, climate projections, and evidence-based 
-			    methodologies to evaluate community risk and strengthen resilience to extreme heat, flooding, 
-			    wildfire, and other hazards. We help municipalities and community-based organizations understand 
-			    how climate hazards intersect with social vulnerability and critical infrastructure, ensuring 
-			    equitable and informed planning outcomes. Through system development, interactive mapping, and 
-			    collaborative engagement, we design risk assessment tools and proactive emergency preparedness 
-			    strategies that protect people, services, and assets across Canada.
-			</p>
-			</div>
-			
-			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-		  <!-- Banner Image -->
-		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
-		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/landuse.png"
-		         class="w-full h-48 object-cover rounded-t-xl"
-		         alt="Climate Risk Map">
-		   </div>
-		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
-		     Complete Communities and Official Community Plan (OCP) Updates
-		   </h3>
- 		   <p class="text-gray-600">
-				Planovative supports long-range planning by developing multi-criteria decision-making frameworks 
-			    and updating Official Community Plans rooted in the principles of complete, connected, and resilient 
-			    communities. We help municipalities and non-profit organizations evaluate and align land use, housing, transportation, 
-			    infrastructure, and climate considerations using geospatial analysis, scenario testing, and policy 
-			    review to guide sustainable growth. Our team collaborates with staff, elected officials, and 
-			    community members to produce evidence-based strategies, maps, and implementation tools that reflect 
-			    local priorities, equity objectives, and long-term needs across diverse communities in Canada. 
-			</p>
-			</div>
-			
-			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-		  <!-- Banner Image -->
-		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
-		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/socialinfrustructure.png"
-		         class="w-full h-48 object-cover rounded-t-xl"
-		         alt="Climate Risk Map">
-		   </div>
-		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
-		     Social Service and Infrastructure Planning
-		   </h3>
- 		   <p class="text-gray-600">
-				Planovative applies advanced geospatial analytics, spatial accessibility modeling, and 
-			    equity-based statistical assessment to evaluate how communities access essential social 
-			    and public services. We identify service gaps, unmet needs, and structural barriers in 
-			    underserved areas by integrating demographic, socio-economic, mobility, and infrastructure 
-			    datasets. Our team develops data-driven decision-support frameworks that help municipalities 
-			    and community organizations prioritize investments, optimize service delivery, and plan 
-			    resilient, people-centered community infrastructure systems. Through technical expertise 
-			    and collaborative engagement, we strengthen equity, improve well-being, and support 
-			    sustainable long-term service networks across Canada. 
-			</p>
-			</div>
-			
-			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-		  <!-- Banner Image -->
-		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
-		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/mobility.png"
-		         class="w-full h-48 object-cover rounded-t-xl"
-		         alt="Climate Risk Map">
-		   </div>
-		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
-		     Mobility and Active Transportation
-		   </h3>
- 		   <p class="text-gray-600">
-				Planovative designs evidence-based mobility and active transportation plans that support
-    			safe, sustainable, and equitable travel choices across communities. Using advanced
-   				geospatial analytics, network modeling, artificial intelligence, machine learning, and
- 				computer vision techniques, we evaluate and optimize multimodal transportation systems—
-                including public transit, walking, cycling, paratransit, and accessibility services. Our
-			    team identifies infrastructure gaps, models future demand, and assesses the performance
-			    and equity impacts of mobility networks to guide investment and policy decisions. Through
-			    collaborative engagement, data-driven analysis, and scenario testing, we help
-  			    municipalities plan integrated, resilient, and people-centered transportation systems
- 			   that improve connectivity, reduce barriers, and enhance long-term community well-being.</p>
-			</div>
-			
-			
-			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-		  <!-- Banner Image -->
-		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
-		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/suitabilitystudies.png"
-		         class="w-full h-48 object-cover rounded-t-xl"
-		         alt="Climate Risk Map">
-		   </div>
-		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
-		     Suitability Analysis for Land Use, Housing and Business Development
-		   </h3>
- 		   <p class="text-gray-600">
-				 Planovative delivers advanced land-use suitability and site selection analysis to support
-   				 housing (market and non-market), tourism, industrial, and business development decisions.
-   				 Using geospatial analytics and multi-criteria decision-making frameworks, we integrate policy
-   				 constraints, infrastructure capacity, environmental conditions, hazard risk, market access,
-   				 and community priorities to identify high-potential locations and reduce planning uncertainty.
-   				 Our work helps municipalities and organizations compare scenarios, evaluate trade-offs, and
-   				 prioritize investments with clear, defensible evidence. Through data-driven mapping,
-   				 decision-support tools, and collaborative engagement, we enable practical, equitable, and
-   				 sustainable growth strategies tailored to local context across Canada.</p>
-			</div>
-			
-			
-			<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-		  <!-- Banner Image -->
-		  <div class="-mt-8 -mx-8 mb-6 h-48 overflow-hidden">
-		    <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/participatorymapping.png"
-		         class="w-full h-48 object-cover rounded-t-xl"
-		         alt="Climate Risk Map">
-		   </div>
-		   <h3 class="text-xl font-semibold mb-4 text-gray-900">
-		     Participatory Mapping for Community Services and Funding Decisions
-		   </h3>
- 		   <p class="text-gray-600">
-				 Planovative delivers participatory mapping projects that help community-based organizations,
-    			 funders, and partners collaboratively define service areas, identify community strengths and assets,
-			     and surface opportunities, threats, and gaps. Using structured facilitation, human-centered engagement,
-   				 and geospatial technologies, we combine local knowledge with relevant demographic, socio-economic, and
- 				 service-access data to produce clear, defensible evidence. Our outputs include interactive maps,
-   				 shared spatial datasets, and decision-support summaries that strengthen program design, improve
-                 coordination across partners, and support equitable resource allocation. By translating lived
-                 experience into actionable insights, we help organizations plan strategically, communicate impact,
-                 and prioritize investments aligned with community needs.</p>
-			</div>
-				
-			</div></div></div>
+    <main>
+      <section class="hero" id="hero">
+        <canvas class="network-canvas" id="networkCanvas" aria-hidden="true"></canvas>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">Canada's First Community Knowledge Sharing and Network Intelligence Platform for Nonprofits Sector</div>
+            <h1 class="hero-title">Explore. Connect. Collaborate. Amplify Your Impact.</h1>
+            <p class="hero-subtitle">Join Canadian non-profits discovering peer organizations, proven solutions, and aligned collaborators and funders through network intelligence and framework-based analysis.</p>
+            <div class="hero-actions">
+              <a href="https://calendly.com/mnouri-planovative"  class="btn btn-primary btn-large" target="_blank"    rel="noopener noreferrer"> Book a demo</a>
+              <a href="#features" class="btn btn-outline btn-large">Explore Features</a>
+            </div>
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">Charitable & Non-Charitable</div>
+                  <div class="highlight-desc">All Canadian nonprofit organizations</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">Framework-Based Analysis</div>
+                  <div class="highlight-desc">Sustainble Development Goals, Age-Friendly Cities & more</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">100% Public Data</div>
+                  <div class="highlight-desc">Transparent, Centeralized, Integrated</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="18" cy="18" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 9v6M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 7.5L10 10M16.5 7.5L14 10M7.5 16.5L10 14M16.5 16.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">Collaboration & Funding Networks</div>
+                  <div class="highlight-desc">Connect with peers, funders, and partners</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<div class="py-24 bg-white">
-			  <div class="container mx-auto px-6">
-			    <div class="max-w-3xl mx-auto">
-			      <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">How we support our clients?</h2>
-			
-			      <div class="space-y-6">
-			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-orange-800">
-			          <p class="text-gray-700"><span class="font-semibold">Nonprofits and Community-Based Organizations: </span> We help nonprofits and community organizations evaluate service
-									          accessibility, identify unmet needs, and measure program impacts.
-									          Our analysis strengthens funding applications, advocacy efforts, and
-									          strategic planning through clear, equity-focused evidence.</p>
-			        </div>
-			
-			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-			          <p class="text-gray-700"> <span class="font-semibold"> Public Service Providers and Authorities: </span> We support transit agencies, health authorities, and emergency
-									          management organizations with spatial analysis, accessibility
-									          modeling, and system performance evaluation to improve service
-									          delivery, equity, and community resilience. </p>
-			        </div>
-			
-			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-			          <p class="text-gray-700"><span class="font-semibold"> Provincial and Federal Agencies: </span> We work with provincial ministries, Crown agencies, and federal
-									          departments to deliver policy analysis, climate risk assessments,
-									          program evaluation, and decision-support tools. By translating complex
-									          datasets into clear insights, we support effective program design,
-									          funding allocation, and long-term strategic planning.</p>
-			        </div>
-			
-			        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-			          <p class="text-gray-700"><span class="font-semibold"> Municipalities and Regional Districts: </span> We support local governments across British Columbia and Canada with
-									          evidence-based community planning, climate resilience and hazard
-									          assessments, housing and infrastructure analysis, mobility and active
-									          transportation planning, and Official Community Plan (OCP) updates.
-									          Our work enables municipalities to make defensible, transparent
-									          decisions, prioritize investments, and align with provincial and
-									          federal policy requirements.</p></p>
-			        </div>
-					  
-					<div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-			          <p class="text-gray-700"><span class="font-semibold">Indigenous Governments and Organizations: </span> We partner with Indigenous governments and organizations to support
-          									   community-led planning, infrastructure and service needs assessments,
-                                               climate adaptation strategies, and capacity-building initiatives. Our
-                                               approach is collaborative, respectful, and grounded in data-informed
-                                               decision-making that supports long-term community priorities.</p></p>
-			        </div>
+      <section class="mission-section" id="mission">
+        <div class="container">
+          <!-- Hero Introduction -->
+          <div class="mission-hero">
+            <div class="mission-hero-content">
+              <h2 class="section-title">Integrating Canada's Community Knowledge and Networks</h2>
+              <p class="hero-description">Non-profit organizations constitute a vital component of Canada’s institutional landscape, contributing both directly and indirectly to the sustainability, resilience, and well-being of communities nationwide.</p>
+            </div>
 
-					<div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-			          <p class="text-gray-700"><span class="font-semibold">Private-Sector Partners: </span> We collaborate with developers, infrastructure firms, and technology
-          										partners on suitability analysis, market research, and data-driven
-         										planning tools. Our work supports responsible development, regulatory
-         									    alignment, and sustainable investment decisions.</p></p>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			
-			<div id="partners" class="py-24 bg-gray-50">
-			<div class="container mx-auto px-6">
-			<h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Our Clients and Partners</h2>
-			<p class="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">We collaborate with community based organizations (Charities and non for profits), municipalities, BC government and public service agencies to deliver innovative and systematic planning solutions.</p>
-			
-			<div class="grid md:grid-cols-3 gap-12"><div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200 hover:shadow-md transition-all"><h3 class="text-2xl font-bold mb-4 text-blue-600">Insightino</h3><p class="text-gray-700">Advanced data analytics and visualization solutions for business development.</p><div class="mt-6">
-			
-			</div></div><div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border border-green-200 hover:shadow-md transition-all"><h3 class="text-2xl font-bold mb-4 text-green-600">Twlvivo</h3><p class="text-gray-700">Deep domain expertise across a wide breadth of industries, markets, and positions. </p><div class="mt-6">
-			</div></div><div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200 hover:shadow-md transition-all"><h3 class="text-2xl font-bold mb-4 text-purple-600">United Way British Columbia</h3><p class="text-gray-700">Helping British Columbians tackle critical social issues, through local love.</p><div class="mt-6">
-			</div></div></div></div></div>
-			<footer class="bg-gray-900 text-gray-400 py-12">
-				<div class="container mx-auto px-6 text-center"><p>© 2025 Planovative. Shaping a resilient, vibrant, and prosperous future for British Columbians.</p>
-				</div>
-			</footer>
-		</div>
-	</div>
-	    <script>
-          function scrollToSection(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+            <!-- Impact Story -->
+            <div class="impact-story">
+              <div class="story-left">
+                <div class="story-icon">
+                  <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3" opacity="0.2"/>
+                    <path d="M32 12 L32 32 L48 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="story-content">
+                  <h3>The Impact</h3>
+                  <p>Canada's nonprofit sector employs approximately 2.5 million people making it the largest employer in the country, larger than construction, manufacturing, or retail. Charitable and non-charitable nonprofits deliver essential services across health, education, social services, culture, and the environment, addressing system gaps and improving quality of life for Canadians.</p>
+                </div>
+              </div>
+              <div class="story-right">
+                <div class="story-icon challenge">
+                  <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                    <circle cx="44" cy="20" r="4" fill="currentColor"/>
+                    <circle cx="20" cy="44" r="4" fill="currentColor"/>
+                    <circle cx="44" cy="44" r="4" fill="currentColor"/>
+                    <circle cx="32" cy="32" r="4" fill="currentColor" opacity="0.3"/>
+                  </svg>
+                </div>
+                <div class="story-content">
+                  <h3>The Problem</h3>
+                  <p>The nonprofit sector generates extensive knowledge, networks, and initiatives, yet this work remains fragmented across communities and diverse activity areas, limiting the ability to view, compare, and learn from it at a national and provincial scale.</p>
+                </div>
+              </div>
+            </div>
 
-function goToURL(u1) {
-  if (u1) {
-    window.location.href = u1;
-  }
-};
+            <!-- National Overview Stats -->
+            <div class="stats-overview">
+              <div class="overview-card primary">
+                <div class="overview-number">2.5M</div>
+                <div class="overview-label">Sector Employees</div>
+                <div class="overview-detail">Canada's largest employer, bigger than construction, manufacturing, or retail</div>
+              </div>
+              <div class="overview-card accent">
+                <div class="overview-number">85,495</div>
+                <div class="overview-label">Registered Charities</div>
+                <div class="overview-detail">Active across all provinces and territories</div>
+              </div>
+              <div class="overview-card accent">
+                <div class="overview-number">136,000+</div>
+                <div class="overview-label">Total Active Nonprofits</div>
+                <div class="overview-detail">Charitable and non-charitable organizations combined</div>
+              </div>
+            </div>
 
-let showNav = true;
+            <!-- Geographic Distribution -->
+            <div class="geo-distribution">
+              <h3 class="geo-title">Registered Charities by Province and Territory</h3>
+              <p class="geo-subtitle">Charitable nonprofit Organizations spread across 13 provinces and territories, with concentrated activity in Ontario, Quebec, and British Columbia</p>
 
-function updateNavVisibility() {
-  const aboutSection = document.getElementById('about')?.offsetTop || 0;
-  const servicesSection = document.getElementById('services')?.offsetTop || 0;
-  const partnersSection = document.getElementById('partners')?.offsetTop || 0;
-  const scrollPosition = window.scrollY + 100;
+              <!-- Top 3 Provinces - Featured Cards -->
+              <div class="province-featured-row">
+                <div class="province-featured-card">
+                  <div class="province-featured-header">
+                    <div class="province-featured-name">Ontario</div>
+                    <div class="province-featured-badge">LARGEST</div>
+                  </div>
+                  <div class="province-featured-number">31,315</div>
+                  <div class="province-featured-label">Registered Charities</div>
+                  <div class="province-featured-bar">
+                    <div class="province-featured-bar-fill" style="width: 100%"></div>
+                  </div>
+                </div>
 
-  const shouldShow = scrollPosition < aboutSection ;
+                <div class="province-featured-card">
+                  <div class="province-featured-header">
+                    <div class="province-featured-name">Quebec</div>
+                    <div class="province-featured-badge">2ND LARGEST</div>
+                  </div>
+                  <div class="province-featured-number">15,793</div>
+                  <div class="province-featured-label">Registered Charities</div>
+                  <div class="province-featured-bar">
+                    <div class="province-featured-bar-fill" style="width: 50%"></div>
+                  </div>
+                </div>
 
-  if (shouldShow !== showNav) {
-    showNav = shouldShow;
-    // Call your UI update logic here
-    document.getElementById('top-buttons').style.display = showNav ? 'flex' : 'none';
-  }
-}
+                <div class="province-featured-card">
+                  <div class="province-featured-header">
+                    <div class="province-featured-name">British Columbia</div>
+                    <div class="province-featured-badge">3RD LARGEST</div>
+                  </div>
+                  <div class="province-featured-number">12,314</div>
+                  <div class="province-featured-label">Registered Charities</div>
+                  <div class="province-featured-bar">
+                    <div class="province-featured-bar-fill" style="width: 40%"></div>
+                  </div>
+                </div>
+              </div>
 
-window.addEventListener('scroll', updateNavVisibility);
+              <!-- Remaining Provinces - Horizontal Chart -->
+              <div class="province-chart-grid">
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Alberta</span>
+                  <span class="province-chart-number">9,388</span>
+                </div>
 
-// Optionally, trigger the function once on page load
-updateNavVisibility();
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Manitoba</span>
+                  <span class="province-chart-number">4,641</span>
+                </div>
 
-		document.getElementById("explore").addEventListener("click", function() {
-            document.getElementById("services").scrollIntoView({ behavior: "smooth" });
-        });
-    </script>
-</body>
-</html>					
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Saskatchewan</span>
+                  <span class="province-chart-number">4,009</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Nova Scotia</span>
+                  <span class="province-chart-number">3,547</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">New Brunswick</span>
+                  <span class="province-chart-number">2,520</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Newfoundland & Labrador</span>
+                  <span class="province-chart-number">1,130</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Prince Edward Island</span>
+                  <span class="province-chart-number">564</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Northwest Territories</span>
+                  <span class="province-chart-number">104</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Yukon</span>
+                  <span class="province-chart-number">132</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Nunavut</span>
+                  <span class="province-chart-number">38</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Knowledge Value Banner -->
+          <div class="knowledge-banner">
+            <div class="banner-content">
+              <h3>The Value of Community-Generated Knowledge</h3>
+              <p>Over time, a substantial body of knowledge has been generated from within Canadian communities themselves, knowledge rooted in lived experience and practical implementation. Yet, unlike academic research with databases like Web of Science or PubMed, <strong>no comparable centralized repository exists for nonprofit activities and community-based research.</strong></p>
+            </div>
+          </div>
+
+          <!-- Three Critical Gaps -->
+          <div class="gaps-section">
+            <h3 class="gaps-title">Three Critical Gaps We're Addressing</h3>
+            <div class="gaps-showcase">
+              <div class="gap-card">
+                <div class="gap-icon">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <rect x="8" y="8" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                    <rect x="28" y="8" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                    <rect x="8" y="28" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                    <rect x="28" y="28" width="12" height="12" rx="2" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="gap-number">01</div>
+                <h4>Fragmented Knowledge</h4>
+                <p>Nonprofit-generated knowledge exists in highly fragmented form. There has been no coordinated effort to create a centralized system where nonprofits can view, share, and learn from one another's activities.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="14" cy="28" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="28" cy="14" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="42" cy="28" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="28" cy="42" r="6" fill="currentColor"/>
+                    <path d="M14 28 L28 28" stroke="currentColor" stroke-width="2" opacity="0.2" stroke-dasharray="4 4"/>
+                  </svg>
+                </div>
+                <div class="gap-number">02</div>
+                <h4>Limited Collaboration</h4>
+                <p>The absence of a system capable of transforming dispersed knowledge into a living network of collaboration and shared learning prevents organizations from staying informed about peer activities.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="28" cy="28" r="20" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                    <circle cx="28" cy="28" r="14" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                    <circle cx="28" cy="28" r="8" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="28" cy="28" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="gap-number">03</div>
+                <h4>Scale and Diversity</h4>
+                <p>Due to the breadth and diversity of non-profit activities across sectors and geographies, no single system has yet succeeded in comprehensively managing, categorizing, or structuring the knowledge, networks, and practices they generate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem-section" id="problem">
+        <div class="container">
+          <h2 class="section-title">The TrueNetwork Solution</h2>
+          <p class="section-subtitle">TrueNetwork is a living, connective infrastructure that makes community-generated knowledge and nonprofit networks visible, connected, and usable at scale—transforming fragmented information into shared insight and collective strength.</p>
+
+          <div class="comparison-grid">
+            <div class="comparison-card disconnected">
+              <div class="comparison-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="4" fill="currentColor"/>
+                  <circle cx="36" cy="12" r="4" fill="currentColor"/>
+                  <circle cx="12" cy="36" r="4" fill="currentColor"/>
+                  <circle cx="36" cy="36" r="4" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Before TrueNetwork</h3>
+              <ul>
+                <li>Knowledge scattered across organizations</li>
+                <li>No visibility into peer activities</li>
+                <li>Disconnected from collaboration and funding networks</li>
+                <li>Limited documentation and transparency</li>
+                <li>No systematic analysis of non-profits' outputs</li>
+              </ul>
+            </div>
+
+            <div class="comparison-card connected">
+              <div class="comparison-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="4" fill="currentColor"/>
+                  <circle cx="36" cy="12" r="4" fill="currentColor"/>
+                  <circle cx="12" cy="36" r="4" fill="currentColor"/>
+                  <circle cx="36" cy="36" r="4" fill="currentColor"/>
+                  <line x1="12" y1="12" x2="36" y2="12" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="12" x2="12" y2="36" stroke="currentColor" stroke-width="2"/>
+                  <line x1="36" y1="12" x2="36" y2="36" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="12" x2="36" y2="36" stroke="currentColor" stroke-width="2"/>
+                  <line x1="36" y1="12" x2="12" y2="36" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>With TrueNetwork</h3>
+              <ul>
+                <li>Integrated and searchable knowledge base</li>
+                <li>Comprehensive organizational profile</li>
+                <li>Discover collaboration networks</li>
+                <li>Connect with relevant funders</li>
+                <li>Subscribe to pre-identified networks</li>
+                <li>Staying update and connected with your built network</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="comparison-cta-bottom">
+            <a href="https://calendly.com/mnouri-planovative" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Book a demo</a>
+            <p class="comparison-cta-subtitle">Start with your organization profile</p>
+          </div>
+        </div>
+      </section>
+   
+      <section class="solution-section" id="solution">
+        <div class="container">
+          <div class="solution-intro">
+            <h2 class="section-title">How TrueNetwork Works</h2>
+            <p class="section-subtitle">A comprehensive platform that connects Canada’s nonprofit sector by systematically structuring community-generated knowledge, building rich and comprehensive organizational profiles, enabling smart queries across a growing body of knowledge, and delivering actionable network intelligence.</p>
+          </div>
+
+          <div class="solution-features">
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="6" width="32" height="36" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="17" r="5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 31c0-5 4.5-8 10-8s10 3 10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="12" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3>Building Dedicated Organization Profiles</h3>
+                <p>Each nonprofit organization has a dedicated profile that captures its activities and knowledge outputs such as reports, guidelines, toolkits, and handbooks alongside relevant financial data, all systematically documented and linked to the organization over time.</p>
+              </div>
+
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="3.5" fill="currentColor"/>
+                    <circle cx="10" cy="12" r="3.5" fill="currentColor"/>
+                    <circle cx="38" cy="12" r="3.5" fill="currentColor"/>
+                    <circle cx="10" cy="36" r="3.5" fill="currentColor"/>
+                    <circle cx="38" cy="36" r="3.5" fill="currentColor"/>
+                    <line x1="12.5" y1="14" x2="21" y2="22" stroke="currentColor" stroke-width="2"/>
+                    <line x1="35.5" y1="14" x2="27" y2="22" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12.5" y1="34" x2="21" y2="26" stroke="currentColor" stroke-width="2"/>
+                    <line x1="35.5" y1="34" x2="27" y2="26" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <h3>Pre-Identified Networks of Knowledge and Collaboration</h3>
+                <p>Using global and national frameworks, we systematically map nonprofit organizations and the knowledge they produce to specific framework elements. This enables organizations to identify peers working toward the same goals, explore shared knowledge and practices, and understand how organizations are connected within each framework component.</p>
+              </div>
+
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3>Network Analysis</h3>
+                <p>By analyzing knowledge outputs, TrueNetwork helps reveal networks of collaboration and funding across nonprofits in Canada, enabling organizations to better understand one another's work and remain informed about emerging practices and evidence.</p>
+              </div>
+
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 6v36M6 24h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="10" r="3.5" fill="currentColor"/>
+                    <circle cx="10" cy="24" r="3.5" fill="currentColor"/>
+                    <circle cx="38" cy="24" r="3.5" fill="currentColor"/>
+                    <circle cx="24" cy="38" r="3.5" fill="currentColor"/>
+                    <circle cx="17" cy="17" r="2.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="31" cy="17" r="2.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="17" cy="31" r="2.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="31" cy="31" r="2.5" fill="currentColor" opacity="0.6"/>
+                  </svg>
+                </div>
+                <h3>Build a New Network</h3>
+                <p>TruNetwork uses a combination of human expertise and AI-powered agents to support environmental scanning as you build your own network. The platform helps you identify relevant organizations, understand the types of knowledge they generate, and assess their potential fit as network partners.</p>
+              </div>
+            </div>
+
+          <div class="solution-highlight">
+            <h3>A Living, Dynamic Knowledge Base</h3>
+            <p>Unlike traditional knowledge hubs or organizational directories, TrueNetwork is comprehensive—covering multiple segments of the nonprofit sector—and dynamic, allowing new research and activities to continuously flow into and enrich the network. This creates a searchable and queryable knowledge base accessible to nonprofits, researchers, for-profit organizations, governments at all levels, and public agencies.</p>
+          </div>
+        </div>
+      </section>
+      <section class="features-section" id="features">
+        <div class="container">
+          <h2 class="section-title">Platform Features: How Truenetwork can support you?</h2>
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="feature-number">01</div>
+              <h3>Create Your Organizational Profile</h3>
+              <p>Create a structured, searchable profile that clearly presents your mission, programs, expertise, and community contributions. Your profile connects your work to related organizations, knowledge outputs, frameworks, and funders, making your role in the ecosystem visible and discoverable.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">02</div>
+              <h3>Access and Build on Community-Generated Knowledge</h3>
+              <p>Accelerate your work by learning from reports, toolkits, guides, frameworks, and evaluations created by peer organizations across Canada. TrueNetwork transforms dispersed community knowledge into a reusable, searchable resource that reduces duplication and strengthens evidence-informed action.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">03</div>
+              <h3>Analyze Your Work Through Frameworks</h3>
+              <p> Understand how your initiatives align with national and global priorities using framework-based analysis. TrueNetwork supports the Sustainable Development Goals and is expanding to additional frameworks such as WHO’s Age-friendly Communities to assess alignment, gaps, and collective contribution.
+            </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">04</div>
+              <h3>Discover Peers and Build Partnerships</h3>
+              <p> Identify organizations working on similar priorities or within the same communities. Explore profiles, outputs, and focus areas to assess alignment, understand complementary strengths, and form more coordinated and effective collaborations.
+            </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">05</div>
+              <h3>Build Networks and Support Advocacy</h3>
+              <p>Visualize collaboration and advocacy networks by topic and geography. TrueNetwork reveals how organizations, coalitions, and funders connect, helping you navigate alliances, strengthen advocacy efforts, and engage more strategically across the ecosystem.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">06</div>
+              <h3>Identify Aligned Funders</h3>
+              <p>Discover government programs, foundations, and corporate funders aligned with your mission and priorities. Use evidence-based insights to prioritize opportunities, tailor outreach, and build stronger, more strategic funding relationships.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">07</div>
+              <h3>Smart Search and Intelligent Discovery</h3>
+              <p>Search across community documents, organizational profiles, annual reports, and strategic plans using intelligent query tools. TrueNetwork delivers precise, high-value insights without requiring you to navigate disconnected websites, PDFs, or databases.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-number">08</div>
+              <h3>Demonstrate and Share Your Impact</h3>
+              <p>Show how your work contributes to frameworks, community outcomes, and shared goals through clear, structured outputs. By making your knowledge visible and accessible, you strengthen collective learning and amplify the impact of community-generated evidence.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="why-matters-section">
+        <div class="container">
+          <h2 class="section-title">A Consulting-Led Platform</h2>
+          <p class="section-subtitle">TrueNetwork combines a robust technology platform with hands-on consulting support. We work with funders, governments, public authorities, and non-profit organizations to design and activate networks, map community-generated knowledge, and develop specialized analytical frameworks aligned with their priorities. Through structured communication and shared intelligence, we help partners stay connected, informed, and aligned as their networks evolve.</p>
+
+          <div class="stakeholder-benefits">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Professional Environmental Scanning</h3>
+              <ul>
+                <li>Conduct structured environmental scans using multiple publicly available datasets to identify potential organizations, partners, and stakeholders relevant to your network</li>
+                <li>Develop high-quality organizational profiles for identified entities, integrating their activities, focus areas, and contributions into the broader network context.</li>
+                <li>Consolidate all produced knowledge—across reports, toolkits, evaluations, and other formats—into a coherent, searchable network context to support network design and strategic planning.</li>
+              </ul>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M16 22h16M16 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Framework Implementation and Network Building</h3>
+              <ul>
+                <li>Integrate appropriate national or global frameworks to structure their knowledge, collaboration, and funding ecosystems.</li>
+                <li>Design and build networks using framework analysis, including identifying key actors, relationships, and sub-networks within the broader ecosystem.</li>
+                <li>Increase network visibility across Canada by connecting relevant organizations and promoting awareness of the network to support growth, engagement, and collaboration.</li>
+              </ul>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="34" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="14" cy="34" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="34" cy="34" r="4" stroke="currentColor" stroke-width="2"/>
+                  <path d="M14 14L34 34M34 14L14 34" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Connected Networks for Ongoing Awareness</h3>
+              <ul>
+                <li>Enable structured sharing of reports, toolkits, evaluations, and other knowledge outputs across all organizations within a network.</li>
+                <li>Keep network members informed about organizational activities, events, and newly published resources through coordinated updates.</li>
+                <li>Establish ongoing communication channels that ensure the network remains aware of new initiatives, collaborations, and emerging opportunities.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="comparison-cta-bottom">
+            <a href="https://calendly.com/mnouri-planovative" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Get Consultancy to Build Your Network</a>
+            <p class="comparison-cta-subtitle"></p>
+          </div>
+        </div>
+      </section>
 
 
 
+      <section class="sdg-section" id="sdgs">
+        <div class="container">
+          <div class="sdg-intro">
+            <h2 class="section-title">Built on the UN SDG Framework</h2>
+            <p class="section-subtitle">TrueNetwork addresses the need for systematic categorization of nonprofit activities and knowledge by aligning them with national and global frameworks.</p>
+          </div>
 
+          <div class="sdg-explanation">
+            <div class="sdg-explain-card">
+              <h3>Why the SDG Framework?</h3>
+              <p>The 17 Sustainable Development Goals provide a universal language for nonprofit work. By mapping nonprofit work onto established frameworks, activities and outputs can be understood within shared structures and comparable contexts.</p>
+            </div>
+            <div class="sdg-explain-card">
+              <h3>Clear Visibility of Impact</h3>
+              <p>This allows nonprofits, federal, provincial, and local governments, public agencies, and the nonprofits themselves to clearly see how their efforts across Canada contribute to national priorities as well as global goals and strategies.</p>
+            </div>
+          </div>
+          <div class="sdg-grid">
+            <div class="sdg-card" data-sdg="1" style="--sdg-color: #e5243b;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-01.jpg""
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="2" style="--sdg-color: #dda63a;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-02.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="3" style="--sdg-color: #4c9f38;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-03.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="4" style="--sdg-color: #c5192d;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-04.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="5" style="--sdg-color: #ff3a21;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-05.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="6" style="--sdg-color: #26bde2;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-06.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="7" style="--sdg-color: #fcc30b;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-07.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="8" style="--sdg-color: #a21942;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-08.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="9" style="--sdg-color: #fd6925;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-09.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="10" style="--sdg-color: #dd1367;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-10.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="11" style="--sdg-color: #fd9d24;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-11.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="12" style="--sdg-color: #bf8b2e;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-12.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="13" style="--sdg-color: #3f7e44;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-13.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="14" style="--sdg-color: #0a97d9;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-14.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="15" style="--sdg-color: #56c02b;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-15.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="16" style="--sdg-color: #00689d;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-16.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="17" style="--sdg-color: #19486a;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-17.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="audience-section" id="audience">
+        <div class="container">
+          <h2 class="section-title">Who Benefits from TrueNetwork</h2>
+          <div class="audience-tabs">
+            <div class="tab-buttons" role="tablist">
+              <button class="tab-button active" role="tab" aria-selected="true" data-tab="nonprofits">Nonprofits</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab="funders">Funders & Government</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab="researchers">Researchers</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab="students">Students</button>
+            </div>
+            <div class="tab-content active" data-content="nonprofits">
+              <div class="audience-content">
+                <div class="audience-text">
+                  <h3>For Nonprofit Organizations</h3>
+                  <ul class="benefit-list">
+                    <li>Discover peer organizations working on similar SDG goals</li>
+                    <li>Find potential collaboration partners in your region</li>
+                    <li>Connect with funders aligned with your mission</li>
+                    <li>Access community knowledge and proven strategies</li>
+                    <li>Amplify your visibility to stakeholders</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Get Started Free</a>
+                </div>
+                <div class="audience-visual">
+                  <div class="visual-card">
+                    <div class="visual-stat">95%</div>
+                    <p>of nonprofits find new partnership opportunities</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-content="funders">
+              <div class="audience-content">
+                <div class="audience-text">
+                  <h3>For Funders & Government</h3>
+                  <ul class="benefit-list">
+                    <li>Identify organizations aligned with funding priorities</li>
+                    <li>Analyze nonprofit landscape by SDG goal and region</li>
+                    <li>Track collective impact across funded programs</li>
+                    <li>Discover emerging community initiatives</li>
+                    <li>Make data-informed funding decisions</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Request Demo</a>
+                </div>
+                <div class="audience-visual">
+                  <div class="visual-card">
+                    <div class="visual-stat">60%</div>
+                    <p>faster grantmaking decision process</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-content="researchers">
+              <div class="audience-content">
+                <div class="audience-text">
+                  <h3>For Researchers & Academics</h3>
+                  <ul class="benefit-list">
+                    <li>Access comprehensive Canadian nonprofit data</li>
+                    <li>Analyze sector trends and network patterns</li>
+                    <li>Study SDG alignment across organizations</li>
+                    <li>Conduct community-based research</li>
+                    <li>Collaborate with nonprofit partners</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Academic Access</a>
+                </div>
+                <div class="audience-visual">
+                  <div class="visual-card">
+                    <div class="visual-stat">137K+</div>
+                    <p>organizations in research database</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-content="students">
+              <div class="audience-content">
+                <div class="audience-text">
+                  <h3>For Students</h3>
+                  <ul class="benefit-list">
+                    <li>Explore nonprofit career opportunities</li>
+                    <li>Find volunteer and internship positions</li>
+                    <li>Research organizations for academic projects</li>
+                    <li>Learn about SDG-aligned community work</li>
+                    <li>Network with nonprofit professionals</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Student Free Access</a>
+                </div>
+                <div class="audience-visual">
+                  <div class="visual-card">
+                    <div class="visual-stat">Free</div>
+                    <p>for students with valid .edu email</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="pricing-section" id="pricing">
+        <div class="container">
+          <h2 class="section-title">Early Adoption Pricing</h2>
+          <p class="section-subtitle">Join us in building Canada's nonprofit network. Lock in early adopter rates.</p>
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <div class="pricing-tier">Explorer</div>
+              <div class="pricing-price">
+                <span class="price-amount">Free</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Basic organization search</li>
+                <li>View SDG mappings</li>
+                <li>Limited messaging (5/month)</li>
+                <li>Community access</li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-block">Start Free</a>
+            </div>
+            <div class="pricing-card featured">
+              <div class="pricing-badge">Most Popular</div>
+              <div class="pricing-tier">Connector</div>
+              <div class="pricing-price">
+                <span class="price-amount">$49</span>
+                <span class="price-period">/month</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Advanced search & filters</li>
+                <li>Unlimited messaging</li>
+                <li>Document library access</li>
+                <li>Network visualization</li>
+                <li>Email support</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-block">Start Trial</a>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-tier">Enterprise</div>
+              <div class="pricing-price">
+                <span class="price-amount">Custom</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Everything in Connector</li>
+                <li>API access</li>
+                <li>Custom integrations</li>
+                <li>Dedicated support</li>
+                <li>Training & onboarding</li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-block">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How is TrueNetwork different from other nonprofit directories?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>TrueNetwork is fundamentally different because it was designed to address critical gaps in how community-generated knowledge is organized and accessed. While traditional directories simply list organizations, TrueNetwork creates dedicated profiles that document activities, research outputs, and knowledge over time.</p>
+                <p>We reveal networks of collaboration and funding by analyzing knowledge outputs, integrate Government of Canada data from CRA and federal funding programs, and map all activities to the UN SDG framework. This creates a comprehensive, dynamic knowledge base—not just a static directory—that enables Truenetwork intelligence across Canada's nonprofit sector.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is my organization's data included in TrueNetwork?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We include all registered Canadian charities and many non-charitable nonprofits using publicly available data. Organizations can claim their profiles to add additional information, update SDG mappings, and connect with the community.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do you map organizations to SDG goals?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We use a combination of AI analysis of organizational documents, self-reported information, and community validation to map each organization's work to relevant SDG goals and targets. Organizations can review and refine their SDG mappings at any time.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I use TrueNetwork for academic research?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We offer special academic access for researchers studying the Canadian nonprofit sector. Contact us at research@truenetwork.ca to discuss data access and research partnerships.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What's included in the free plan?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>The Explorer plan includes basic search functionality, the ability to view SDG mappings, limited messaging capabilities (5 messages per month), and access to our community features. It's perfect for exploring the platform and occasional networking.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How does TrueNetwork ensure transparency and complete documentation?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>TrueNetwork integrates publicly available information from the Canada Revenue Agency and other federal funding programs directly into organizational profiles. This integration demonstrates how nonprofits—particularly charitable organizations—operate across different fields and receive funding from various sources.</p>
+                <p>Combined with documented activities and knowledge outputs tracked over time, this creates complete, transparent, and well-documented organizational profiles. This serves as a source of evidence for nonprofit activities and supports greater transparency in nonprofit practice across Canada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Connect with Canada's Nonprofit Network?</h2>
+            <p>Join thousands of organizations discovering new partnerships, funding opportunities, and proven solutions.</p>
+            <form class="cta-form">
+              <div class="form-group">
+                <input type="email" placeholder="Enter your work email" aria-label="Email address" required />
+                <button type="submit" class="btn btn-primary">Start Free Trial</button>
+              </div>
+              <div class="trust-signals">
+                <span>✓ No credit card required</span>
+                <span>✓ 14-day free trial</span>
+                <span>✓ Cancel anytime</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="assets/icon-finalized copy copy.png" alt="TrueNetwork" height="60" />
+            </div>
+            <p class="footer-tagline">Connecting Canada's nonprofit sector through network intelligence.</p>
+            <div class="footer-badge">By Planovative</div>
+          </div>
+          <div class="footer-column">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#sdgs">SDG Framework</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#">API Documentation</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Community Guidelines</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 TrueNetwork by Planovative. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
