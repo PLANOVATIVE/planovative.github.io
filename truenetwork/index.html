@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TrueNetwork - Canada's First Community Knowledge Sharing and Network Intelligence Platform for Nonprofits Sector</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Connect with 137,000+ Canadian nonprofits. Find peers, funders, and proven solutions. Map your work to UN SDGs. Canada's first network intelligence platform." />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="assets/icon-finalized copy copy.png" alt="TrueNetwork" height="60" />
+          </div>
+          <nav class="nav-menu" aria-label="Main navigation">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+              <span class="hamburger"></span>
+            </button>
+            <ul class="nav-list">
+              <li><a href="#mission">Our Mission</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#sdgs">Frameworks</a></li>
+              <li><a href="#audience">Who It's For</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+              <a href="https://pln.planovative.ca"
+   class="btn btn-secondary"
+   target="_blank"
+   rel="noopener noreferrer">
+  Sign In
+              </a>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <canvas class="network-canvas" id="networkCanvas" aria-hidden="true"></canvas>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">Canada's First Community Knowledge Sharing and Network Intelligence Platform for Nonprofits Sector</div>
+            <h1 class="hero-title">Explore. Connect. Collaborate. Amplify Your Impact.</h1>
+            <p class="hero-subtitle">Join Canadian non-profits discovering peer organizations, proven solutions, and aligned collaborators and funders through network intelligence and framework-based analysis.</p>
+            <div class="hero-actions">
+              <a href="https://calendly.com/mnouri-planovative"  class="btn btn-primary btn-large" target="_blank"    rel="noopener noreferrer"> Book a demo</a>
+              <a href="#features" class="btn btn-outline btn-large">Explore Features</a>
+            </div>
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">Charitable & Non-Charitable</div>
+                  <div class="highlight-desc">All Canadian nonprofit organizations</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">Framework-Based Analysis</div>
+                  <div class="highlight-desc">Sustainble Development Goals, Age-Friendly Cities & more</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">100% Public Data</div>
+                  <div class="highlight-desc">Transparent, Centeralized, Integrated</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="18" cy="18" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 9v6M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 7.5L10 10M16.5 7.5L14 10M7.5 16.5L10 14M16.5 16.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <div class="highlight-title">Collaboration & Funding Networks</div>
+                  <div class="highlight-desc">Connect with peers, funders, and partners</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-section" id="mission">
+        <div class="container">
+          <!-- Hero Introduction -->
+          <div class="mission-hero">
+            <div class="mission-hero-content">
+              <h2 class="section-title">Integrating Canada's Community Knowledge and Networks</h2>
+              <p class="hero-description">Non-profit organizations constitute a vital component of Canada’s institutional landscape, contributing both directly and indirectly to the sustainability, resilience, and well-being of communities nationwide.</p>
+            </div>
+
+            <!-- Impact Story -->
+            <div class="impact-story">
+              <div class="story-left">
+                <div class="story-icon">
+                  <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3" opacity="0.2"/>
+                    <path d="M32 12 L32 32 L48 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="story-content">
+                  <h3>The Impact</h3>
+                  <p>Canada's nonprofit sector employs approximately 2.5 million people making it the largest employer in the country, larger than construction, manufacturing, or retail. Charitable and non-charitable nonprofits deliver essential services across health, education, social services, culture, and the environment, addressing system gaps and improving quality of life for Canadians.</p>
+                </div>
+              </div>
+              <div class="story-right">
+                <div class="story-icon challenge">
+                  <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                    <circle cx="44" cy="20" r="4" fill="currentColor"/>
+                    <circle cx="20" cy="44" r="4" fill="currentColor"/>
+                    <circle cx="44" cy="44" r="4" fill="currentColor"/>
+                    <circle cx="32" cy="32" r="4" fill="currentColor" opacity="0.3"/>
+                  </svg>
+                </div>
+                <div class="story-content">
+                  <h3>The Problem</h3>
+                  <p>Whether through collaboration among community-based organizations, business-oriented non-profit institutions, and government-affiliated non-profits—or through independent efforts—community organizations remain at the core of community-based knowledge and network generation. Together, these activities produce substantial knowledge, networks, and initiatives. However, this work is often distributed across communities and activity areas, limiting the ability to view, compare, and learn from it at provincial and national scales.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- National Overview Stats -->
+            <div class="stats-overview">
+              <div class="overview-card primary">
+                <div class="overview-number">2.5M</div>
+                <div class="overview-label">Sector Employees</div>
+                <div class="overview-detail">Canada's largest employer, bigger than construction, manufacturing, or retail</div>
+              </div>
+              <div class="overview-card accent">
+                <div class="overview-number">85,495</div>
+                <div class="overview-label">Registered Charities</div>
+                <div class="overview-detail">Active across all provinces and territories</div>
+              </div>
+              <div class="overview-card accent">
+                <div class="overview-number">136,000+</div>
+                <div class="overview-label">Total Active Nonprofits</div>
+                <div class="overview-detail">Charitable and non-charitable organizations combined</div>
+              </div>
+            </div>
+
+            <!-- Geographic Distribution -->
+            <div class="geo-distribution">
+              <h3 class="geo-title">Registered Charities by Province and Territory</h3>
+              <p class="geo-subtitle">Charitable nonprofit Organizations spread across 13 provinces and territories, with concentrated activity in Ontario, Quebec, and British Columbia</p>
+
+              <!-- Top 3 Provinces - Featured Cards -->
+              <div class="province-featured-row">
+                <div class="province-featured-card">
+                  <div class="province-featured-header">
+                    <div class="province-featured-name">Ontario</div>
+                    <div class="province-featured-badge">LARGEST</div>
+                  </div>
+                  <div class="province-featured-number">31,315</div>
+                  <div class="province-featured-label">Registered Charities</div>
+                  <div class="province-featured-bar">
+                    <div class="province-featured-bar-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+
+                <div class="province-featured-card">
+                  <div class="province-featured-header">
+                    <div class="province-featured-name">Quebec</div>
+                    <div class="province-featured-badge">2ND LARGEST</div>
+                  </div>
+                  <div class="province-featured-number">15,793</div>
+                  <div class="province-featured-label">Registered Charities</div>
+                  <div class="province-featured-bar">
+                    <div class="province-featured-bar-fill" style="width: 50%"></div>
+                  </div>
+                </div>
+
+                <div class="province-featured-card">
+                  <div class="province-featured-header">
+                    <div class="province-featured-name">British Columbia</div>
+                    <div class="province-featured-badge">3RD LARGEST</div>
+                  </div>
+                  <div class="province-featured-number">12,314</div>
+                  <div class="province-featured-label">Registered Charities</div>
+                  <div class="province-featured-bar">
+                    <div class="province-featured-bar-fill" style="width: 40%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Remaining Provinces - Horizontal Chart -->
+              <div class="province-chart-grid">
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Alberta</span>
+                  <span class="province-chart-number">9,388</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Manitoba</span>
+                  <span class="province-chart-number">4,641</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Saskatchewan</span>
+                  <span class="province-chart-number">4,009</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Nova Scotia</span>
+                  <span class="province-chart-number">3,547</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">New Brunswick</span>
+                  <span class="province-chart-number">2,520</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Newfoundland & Labrador</span>
+                  <span class="province-chart-number">1,130</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Prince Edward Island</span>
+                  <span class="province-chart-number">564</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Northwest Territories</span>
+                  <span class="province-chart-number">104</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Yukon</span>
+                  <span class="province-chart-number">132</span>
+                </div>
+
+                <div class="province-chart-row">
+                  <span class="province-chart-name">Nunavut</span>
+                  <span class="province-chart-number">38</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Knowledge Value Banner -->
+          <div class="knowledge-banner">
+            <div class="banner-content">
+              <h3>The Value of Community-Generated Knowledge</h3>
+              <p>Over time, a substantial body of knowledge has been generated from within Canadian communities themselves, knowledge rooted in lived experience and practical implementation. Yet, unlike academic research with databases like Web of Science or PubMed, <strong>no comparable centralized repository exists for nonprofit activities and community-based research.</strong></p>
+            </div>
+          </div>
+
+          <!-- Three Critical Gaps -->
+          <div class="gaps-section">
+            <h3 class="gaps-title">Three Critical Gaps We're Addressing</h3>
+            <div class="gaps-showcase">
+              <div class="gap-card">
+                <div class="gap-icon">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <rect x="8" y="8" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                    <rect x="28" y="8" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                    <rect x="8" y="28" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                    <rect x="28" y="28" width="12" height="12" rx="2" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="gap-number">01</div>
+                <h4>Fragmented Knowledge</h4>
+                <p>Nonprofit-generated knowledge exists in highly fragmented form. There has been no coordinated effort to create a centralized system where nonprofits can view, share, and learn from one another's activities.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="14" cy="28" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="28" cy="14" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="42" cy="28" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="28" cy="42" r="6" fill="currentColor"/>
+                    <path d="M14 28 L28 28" stroke="currentColor" stroke-width="2" opacity="0.2" stroke-dasharray="4 4"/>
+                  </svg>
+                </div>
+                <div class="gap-number">02</div>
+                <h4>Limited Collaboration</h4>
+                <p>The absence of a system capable of transforming dispersed knowledge into a living network of collaboration and shared learning prevents organizations from staying informed about peer activities.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="28" cy="28" r="20" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                    <circle cx="28" cy="28" r="14" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                    <circle cx="28" cy="28" r="8" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="28" cy="28" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="gap-number">03</div>
+                <h4>Scale and Diversity</h4>
+                <p>Due to the breadth and diversity of non-profit activities across sectors and geographies, no single system has yet succeeded in comprehensively managing, categorizing, or structuring the knowledge, networks, and practices they generate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem-section" id="problem">
+        <div class="container">
+          <h2 class="section-title">The TrueNetwork Solution</h2>
+          <p class="section-subtitle">TrueNetwork is a living, connective infrastructure that makes community-generated knowledge and nonprofit networks visible, connected, and usable at scale—transforming fragmented information into shared insight and collective strength.</p>
+
+          <div class="comparison-grid">
+            <div class="comparison-card disconnected">
+              <div class="comparison-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="12" r="3" fill="currentColor"/>
+                  <circle cx="22" cy="9"  r="2.5" fill="currentColor"/>
+                  <circle cx="36" cy="14" r="3" fill="currentColor"/>
+                  <circle cx="14" cy="24" r="2.5" fill="currentColor"/>
+                  <circle cx="28" cy="22" r="3" fill="currentColor"/>
+                  <circle cx="40" cy="26" r="2.5" fill="currentColor"/>
+                  <circle cx="9"  cy="36" r="3" fill="currentColor"/>
+                  <circle cx="24" cy="38" r="2.5" fill="currentColor"/>
+                  <circle cx="38" cy="36" r="3" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Before TrueNetwork</h3>
+              <ul>
+                <li>Knowledge scattered across organizations</li>
+                <li>No visibility into peer activities</li>
+                <li>Disconnected from collaboration and funding networks</li>
+                <li>Limited documentation and transparency</li>
+                <li>No systematic analysis of non-profits' outputs</li>
+              </ul>
+            </div>
+
+            <div class="comparison-card connected">
+              <div class="comparison-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Connections -->
+                  <g stroke="currentColor" stroke-width="2" stroke-    linecap="round" stroke-linejoin="round" opacity="0.95">
+                    <!-- Outer ring -->
+                    <line x1="10" y1="12" x2="22" y2="8"/>
+                    <line x1="22" y1="8"  x2="36" y2="12"/>
+                    <line x1="36" y1="12" x2="40" y2="24"/>
+                    <line x1="40" y1="24" x2="36" y2="36"/>
+                    <line x1="36" y1="36" x2="24" y2="40"/>
+                    <line x1="24" y1="40" x2="12" y2="36"/>
+                    <line x1="12" y1="36" x2="8"  y2="24"/>
+                    <line x1="8"  y1="24" x2="10" y2="12"/>
+              
+                    <!-- Hub spokes -->
+                    <line x1="24" y1="24" x2="10" y2="12"/>
+                    <line x1="24" y1="24" x2="22" y2="8"/>
+                    <line x1="24" y1="24" x2="36" y2="12"/>
+                    <line x1="24" y1="24" x2="40" y2="24"/>
+                    <line x1="24" y1="24" x2="36" y2="36"/>
+                    <line x1="24" y1="24" x2="24" y2="40"/>
+                    <line x1="24" y1="24" x2="12" y2="36"/>
+                    <line x1="24" y1="24" x2="8"  y2="24"/>
+                  </g>
+              
+                  <!-- Nodes -->
+                  <g fill="currentColor">
+                    <circle cx="24" cy="24" r="4.2"/>
+                    <circle cx="10" cy="12" r="2.8"/>
+                    <circle cx="22" cy="8"  r="2.6"/>
+                    <circle cx="36" cy="12" r="2.8"/>
+                    <circle cx="40" cy="24" r="2.6"/>
+                    <circle cx="36" cy="36" r="2.8"/>
+                    <circle cx="24" cy="40" r="2.6"/>
+                    <circle cx="12" cy="36" r="2.8"/>
+                    <circle cx="8"  cy="24" r="2.6"/>
+                  </g>
+                </svg>
+              </div>
+              <h3>With TrueNetwork</h3>
+              <ul>
+                <li>Integrated and searchable knowledge base</li>
+                <li>Comprehensive organizational profile</li>
+                <li>Discover collaboration networks</li>
+                <li>Connect with relevant funders</li>
+                <li>Subscribe to pre-identified networks</li>
+                <li>Staying update and connected with your built network</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="comparison-cta-bottom">
+            <a href="https://calendly.com/mnouri-planovative" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Book a demo</a>
+            <p class="comparison-cta-subtitle">Start with your organization profile</p>
+          </div>
+        </div>
+      </section>
+   
+      <section class="solution-section" id="solution">
+        <div class="container">
+          <div class="solution-intro">
+            <h2 class="section-title">How TrueNetwork Works</h2>
+            <p class="section-subtitle">A comprehensive platform that connects Canada’s nonprofit sector by systematically structuring community-generated knowledge, building rich and comprehensive organizational profiles, enabling smart queries across a growing body of knowledge, and delivering actionable network intelligence.</p>
+          </div>
+
+          <div class="solution-features">
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="6" width="32" height="36" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="17" r="5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 31c0-5 4.5-8 10-8s10 3 10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="12" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3>Building Dedicated Organization Profiles</h3>
+                <p>Each nonprofit organization has a dedicated profile that captures its activities and knowledge outputs such as reports, guidelines, toolkits, and handbooks alongside relevant financial data, all systematically documented and linked to the organization over time.</p>
+              </div>
+
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="3.5" fill="currentColor"/>
+                    <circle cx="10" cy="12" r="3.5" fill="currentColor"/>
+                    <circle cx="38" cy="12" r="3.5" fill="currentColor"/>
+                    <circle cx="10" cy="36" r="3.5" fill="currentColor"/>
+                    <circle cx="38" cy="36" r="3.5" fill="currentColor"/>
+                    <line x1="12.5" y1="14" x2="21" y2="22" stroke="currentColor" stroke-width="2"/>
+                    <line x1="35.5" y1="14" x2="27" y2="22" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12.5" y1="34" x2="21" y2="26" stroke="currentColor" stroke-width="2"/>
+                    <line x1="35.5" y1="34" x2="27" y2="26" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <h3>Pre-Identified Networks of Knowledge and Collaboration</h3>
+                <p>Using global and national frameworks, we systematically map nonprofit organizations and the knowledge they produce to specific framework elements. This enables organizations to identify peers working toward the same goals, explore shared knowledge and practices, and understand how organizations are connected within each framework component.</p>
+              </div>
+
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3>Network Analysis</h3>
+                <p>By analyzing knowledge outputs, TrueNetwork helps reveal networks of collaboration and funding across nonprofits in Canada, enabling organizations to better understand one another's work and remain informed about emerging practices and evidence.</p>
+              </div>
+
+              <div class="work-item">
+                <div class="work-icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 6v36M6 24h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="10" r="3.5" fill="currentColor"/>
+                    <circle cx="10" cy="24" r="3.5" fill="currentColor"/>
+                    <circle cx="38" cy="24" r="3.5" fill="currentColor"/>
+                    <circle cx="24" cy="38" r="3.5" fill="currentColor"/>
+                    <circle cx="17" cy="17" r="2.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="31" cy="17" r="2.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="17" cy="31" r="2.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="31" cy="31" r="2.5" fill="currentColor" opacity="0.6"/>
+                  </svg>
+                </div>
+                <h3>Build a New Network</h3>
+                <p>TruNetwork uses a combination of human expertise and AI-powered agents to support environmental scanning as you build your own network. The platform helps you identify relevant organizations, understand the types of knowledge they generate, and assess their potential fit as network partners.</p>
+              </div>
+            </div>
+
+          <div class="solution-highlight">
+            <h3>A Living, Dynamic Knowledge Base</h3>
+            <p>Unlike traditional knowledge hubs or organizational directories, TrueNetwork is comprehensive—covering multiple segments of the nonprofit sector—and dynamic, allowing new research and activities to continuously flow into and enrich the network. This creates a searchable and queryable knowledge base accessible to nonprofits, researchers, for-profit organizations, governments at all levels, and public agencies.</p>
+          </div>
+        </div>
+      </section>
+      <section class="features-section" id="features">
+        <div class="container">
+          <h2 class="section-title">Platform Features and Solutions for:</h2>
+          <div class="features-accordion">
+            <div class="feature-dropdown-item">
+              <button class="feature-dropdown-button" aria-expanded="false">
+                <span>Non Profits</span>
+                <span class="dropdown-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="feature-dropdown-content">
+                <div class="features-grid">
+                  <article class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Create Your Organizational Profile</h3>
+                    <p>Create a structured, searchable profile that clearly presents your mission, programs, expertise, and community contributions. Your profile connects your work to related organizations, knowledge outputs, frameworks, and funders, making your role in the ecosystem visible and discoverable.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Access and Build on Community-Generated Knowledge</h3>
+                    <p>Accelerate your work by learning from reports, toolkits, guides, frameworks, and evaluations created by peer organizations across Canada. TrueNetwork transforms dispersed community knowledge into a reusable, searchable resource that reduces duplication and strengthens evidence-informed action.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Analyze Your Work Through Frameworks</h3>
+                    <p>Understand how your initiatives align with national and global priorities using framework-based analysis. TrueNetwork supports the Sustainable Development Goals and is expanding to additional frameworks such as WHO's Age-friendly Communities to assess alignment, gaps, and collective contribution.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">04</div>
+                    <h3>Discover Peers and Build Partnerships</h3>
+                    <p>Identify organizations working on similar priorities or within the same communities. Explore profiles, outputs, and focus areas to assess alignment, understand complementary strengths, and form more coordinated and effective collaborations.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">05</div>
+                    <h3>Build Networks and Support</h3>
+                    <p>Visualize collaboration and advocacy networks by topic and geography. TrueNetwork reveals how organizations, coalitions, and funders connect, helping you navigate alliances, strengthen advocacy efforts, and engage more strategically across the ecosystem.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">06</div>
+                    <h3>Identify Aligned Funders</h3>
+                    <p>Discover government programs, foundations, and corporate funders aligned with your mission and priorities. Use evidence-based insights to prioritize opportunities, tailor outreach, and build stronger, more strategic funding relationships.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">07</div>
+                    <h3>Demonstrate and Share Your Impact</h3>
+                    <p>Show how your work contributes to frameworks, community outcomes, and shared goals through clear, structured outputs. By making your knowledge visible and accessible, you strengthen collective learning and amplify the impact of community-generated evidence.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-dropdown-item">
+              <button class="feature-dropdown-button" aria-expanded="false">
+                <span>Academic Researchers</span>
+                <span class="dropdown-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="feature-dropdown-content">
+                <div class="features-grid">
+                  <article class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Access and Build on Community-Generated Knowledge (Gray Literature)</h3>
+                    <p>Access comprehensive Canadian nonprofit data including reports, toolkits, guides, frameworks, and evaluations. TrueNetwork provides researchers with a centralized, searchable repository of community-generated knowledge for academic analysis and research.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Smart Search and Intelligent Discovery</h3>
+                    <p>Search across community documents, organizational profiles, annual reports, and strategic plans using intelligent query tools. TrueNetwork delivers precise, high-value insights without requiring you to navigate disconnected websites, PDFs, or databases.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Analyze Sector Trends Through Frameworks</h3>
+                    <p>Conduct framework-based analysis to study how nonprofit activities align with national and global priorities. Research SDG alignment, community outcomes, and collective impact across Canada's nonprofit sector.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-dropdown-item">
+              <button class="feature-dropdown-button" aria-expanded="false">
+                <span>Municipalities</span>
+                <span class="dropdown-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="feature-dropdown-content">
+                <div class="features-grid">
+                  <article class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Visibility into Non-Profit Activity in Your Municipality</h3>
+                    <p>Map local non-profit initiatives to recognized frameworks such as the World Health Organization’s Age-friendly Communities framework and the UN Sustainable Development Goals. Gain a clearer view of how community programs support municipal priorities, where contributions are concentrated, and where gaps or unmet needs may exist.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Identify Community Partners aligned with funding priorities</h3>
+                    <p>Discover nonprofit organizations, community groups, and service providers operating in your municipality. Build strategic partnerships with organizations aligned with your community development priorities.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Visualize Local Networks</h3>
+                    <p>Understand collaboration networks within your municipality and region. See how community organizations, coalitions, and service providers connect to strengthen community planning and coordination.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">04</div>
+                    <h3>Access Community Intelligence</h3>
+                    <p>Search local community documents, program reports, and strategic plans to inform municipal policy and planning. Access evidence-based insights about community needs and service delivery.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-dropdown-item">
+              <button class="feature-dropdown-button" aria-expanded="false">
+                <span>Government and Public Agencies</span>
+                <span class="dropdown-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="feature-dropdown-content">
+                <div class="features-grid">
+                  <article class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Framework-Based Policy Analysis</h3>
+                    <p>Analyze nonprofit activities and outcomes through national and international frameworks. Track progress toward policy priorities including SDGs, reconciliation goals, and sector-specific outcomes across jurisdictions.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Map Funding and Collaboration Networks</h3>
+                    <p>Visualize how government funding flows through the nonprofit sector and identify collaboration patterns. Understand network dynamics to inform strategic funding decisions and program design.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Sector Intelligence and Evidence</h3>
+                    <p>Access comprehensive data on nonprofit activities, knowledge outputs, and community impact. Use evidence-based insights to inform policy development, funding priorities, and program evaluation.</p>
+                  </article>
+                  <article class="feature-card">
+                    <div class="feature-number">04</div>
+                    <h3>Identify Implementation Partners and Make data-informed funding decisions</h3>
+                    <p>Discover organizations with demonstrated capacity in specific policy areas or regions. Connect with nonprofits aligned with government priorities to strengthen program delivery and community outcomes.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why-matters-section">
+        <div class="container">
+          <h2 class="section-title">A Consulting-Led Platform</h2>
+          <p class="section-subtitle">TrueNetwork combines a robust technology platform with hands-on consulting support. We work with funders, governments, public authorities, and non-profit organizations to design and activate networks, map community-generated knowledge, and develop specialized analytical frameworks aligned with their priorities. Through structured communication and shared intelligence, we help partners stay connected, informed, and aligned as their networks evolve.</p>
+
+          <div class="stakeholder-benefits">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Professional Environmental Scanning</h3>
+              <ul>
+                <li>Conduct structured environmental scans using multiple publicly available datasets to identify potential organizations, partners, and stakeholders relevant to your network</li>
+                <li>Develop high-quality organizational profiles for identified entities, integrating their activities, focus areas, and contributions into the broader network context.</li>
+                <li>Consolidate all produced knowledge—across reports, toolkits, evaluations, and other formats—into a coherent, searchable network context to support network design and strategic planning.</li>
+              </ul>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M16 22h16M16 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Framework Implementation and Network Building</h3>
+              <ul>
+                <li>Integrate appropriate national or global frameworks to structure their knowledge, collaboration, and funding ecosystems.</li>
+                <li>Design and build networks using framework analysis, including identifying key actors, relationships, and sub-networks within the broader ecosystem.</li>
+                <li>Increase network visibility across Canada by connecting relevant organizations and promoting awareness of the network to support growth, engagement, and collaboration.</li>
+              </ul>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="34" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="14" cy="34" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="34" cy="34" r="4" stroke="currentColor" stroke-width="2"/>
+                  <path d="M14 14L34 34M34 14L14 34" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Connected Networks for Ongoing Awareness</h3>
+              <ul>
+                <li>Enable structured sharing of reports, toolkits, evaluations, and other knowledge outputs across all organizations within a network.</li>
+                <li>Keep network members informed about organizational activities, events, and newly published resources through coordinated updates.</li>
+                <li>Establish ongoing communication channels that ensure the network remains aware of new initiatives, collaborations, and emerging opportunities.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="comparison-cta-bottom">
+            <a href="https://calendly.com/mnouri-planovative" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Get Consultancy to Build Your Network</a>
+            <p class="comparison-cta-subtitle"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sdg-section" id="sdgs">
+        <div class="container">
+          <div class="sdg-intro">
+            <h2 class="section-title">Framework-Based Analysis </h2>
+            <p class="section-subtitle"> TrueNetwork enables systematic categorization and analysis of non-profit organizations, activities, and outputs by applying recognized national and global frameworks. By combining framework-based analysis with network intelligence, the platform helps reveal how local initiatives collectively contribute to broader policy, planning, and community development priorities.</p>
+          </div>
+          <div class="sdg-explanation">
+            <div class="sdg-explain-card">
+              <h3> Beyond CRA, ICNPO and NAICS classification systems</h3>
+              <p> Traditional classification systems such as Canada Revenue Agency (CRA) charity categories, the International Classification of Non-Profit Organizations (ICNPO), and the North American Industry Classification System (NAICS) are primarily designed for administrative, regulatory, or economic reporting purposes.
+              
+              <p>
+While TrueNetwork plans to integrate these coding systems, we believe that non-profit organizations should also be classified in a goal-based, impact-driven way , within a framework that supports the quality of life and sustainability goals of Canadians.
+              </p>
+              <p>
+By connecting non-profit activity to national and global frameworks, beginning with the Sustainable Development Goals, TrueNetwork provides clearer alignment, comparability, and visibility of real-world community impact.
+              </p>
+            </div>
+            <div class="sdg-explain-card">
+              <h3>Reflecting real-world diversity</h3>
+              <p>Many non-profits operate across multiple domains, and single primary or secondary codes often fail to reflect this complexity. Framework-based analysis allows organizations and their community-generated knowledge to be mapped across multiple goals, targets, and indicators.
+              </p>
+              <p>
+Using Canada’s Sustainable Development Goals Indicator Framework as an initial analytical lens, TrueNetwork captures contributions across issue areas while linking local programs to national strategies. This approach helps organizations identify peers with shared priorities and supports stronger collaboration within municipalities, regions, and across Canada.
+              </p>
+            </div>
+          </div>
+        <div class="sdg-intro">
+            <h2 class="section-title">An Umbrella Framework</h2>
+                      
+          <div class="sdg-explanation">
+            <div class="sdg-explain-card">
+              <h3> Canadian Sustaible Development Goal (SDG): An Umberella Framework</h3>
+              <p> TrueNetwork’s first implemented analytical layer uses the Sustainable Development Goals as a shared reference framework. The SDGs provide a widely recognized structure for organizing and comparing diverse community activities, making it easier to understand how non-profit work aligns across organizations, regions, and issue areas.</p>
+            </div>
+            <div class="sdg-explain-card">
+              <h3>Clear Visibility of Collective Impact</h3>
+              <p>Framework-based analysis allows non-profits, municipalities, provinces, federal institutions, and public agencies to clearly see how community-level efforts align with national priorities and global objectives. In Canada, this includes alignment with 
+                <a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html" target="_blank" rel="noopener noreferrer">
+            Moving Forward Together: Canada’s 2030 Agenda National Strategy
+                </a>
+          through the use of 
+                <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/" target="_blank" rel="noopener noreferrer">
+            Canada’s Sustainable Development Goals Indicator Framework
+                </a>.
+          This structured lens supports comparison, gap identification, and evidence-informed planning across jurisdictions.
+              </p>
+            </div>
+          </div>
+          <div class="sdg-grid">
+            <div class="sdg-card" data-sdg="1" style="--sdg-color: #e5243b;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-01.jpg""
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="2" style="--sdg-color: #dda63a;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-02.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="3" style="--sdg-color: #4c9f38;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-03.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="4" style="--sdg-color: #c5192d;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-04.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="5" style="--sdg-color: #ff3a21;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-05.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="6" style="--sdg-color: #26bde2;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-06.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="7" style="--sdg-color: #fcc30b;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-07.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="8" style="--sdg-color: #a21942;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-08.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="9" style="--sdg-color: #fd6925;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-09.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="10" style="--sdg-color: #dd1367;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-10.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="11" style="--sdg-color: #fd9d24;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-11.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="12" style="--sdg-color: #bf8b2e;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-12.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="13" style="--sdg-color: #3f7e44;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-13.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="14" style="--sdg-color: #0a97d9;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-14.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="15" style="--sdg-color: #56c02b;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-15.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="16" style="--sdg-color: #00689d;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-16.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+            <div class="sdg-card" data-sdg="17" style="--sdg-color: #19486a;">
+              <img src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/sdg/E_SDG_Icons-17.jpg"
+     alt="SDG 1 – No Poverty"
+     class="sdg-icon">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="AFC-section" id="AFC">
+        <div class="container">
+        <div class="sdg-intro">
+            <h2 class="section-title">Specialized Frameworks</h2>
+            <p class="section-subtitle">
+              In response to partner and client needs, TrueNetwork integrates specialized national and global frameworks to support structured analysis of community knowledge, networks, and collaboration ecosystems.
+            </p>
+          </div>
+          
+          <div class="sdg-explanation">
+            <div class="sdg-explain-card">
+              <h3>WHO Age-Friendly Cities and Communities Framework</h3>
+              <p> One of the first specialized frameworks integrated into TrueNetwork is the 
+                <a href="https://iris.who.int/server/api/core/bitstreams/08caa73b-5934-4b6b-bffe-d27fbe92e6e7/content" target="_blank" rel="noopener noreferrer">World Health Organization’s Age-Friendly Cities and Communities framework
+                </a>.
+              This framework provides a comprehensive, internationally recognized structure for understanding and improving quality of life for older adults. </p>
+             <p>
+              The framework addresses key dimensions including Outdoor Spaces and Buildings, Transportation, Housing, Social Participation, Respect and Social Inclusion, Civic Participation and Employment, Communication and Information, and Community Support and health services.
+             </p>
+          </div>
+            <div class="sdg-explain-card">
+              <h3>Its dimensions and Collective Impact</h3>
+              <p>
+Framework-based analysis enables non-profits, academics, municipalities, provinces, federal institutions, and public agencies focused on the quality of life and well-being of older adults to clearly understand how community-level efforts align with national priorities and global objectives.
+              </p>
+              <p>
+Non-profit organizations can identify peers working across each dimension of the Age-Friendly framework, access shared knowledge and resources, stay informed about senior-related initiatives, and identify gaps in policies, services, and areas requiring advocacy. Academic researchers can use the framework to support structured grey literature reviews and comparative analysis across dimensions.
+              </p>
+              <p>
+Municipalities gain visibility into how their communities are progressing toward age-friendly goals by seeing who is doing what locally, while governments and public agencies can assess how supported community-based organizations contribute across framework dimensions and where future investment or policy attention may be needed.
+             </p>  
+           </div>
+          </div>
+           <div class="framework-center">
+             <img
+src="https://raw.githubusercontent.com/PLANOVATIVE/planovative.github.io/main/assets/agefriendly.png"
+    alt="WHO Age-Friendly Cities and Communities Framework"
+    class="framework-image-large">
+          </div>
+         </div>
+      </section>
+      <section class="AFC-section" id="AFC">
+        <div class="container">
+        <div class="sdg-intro">
+            <h2 class="section-title">Next Framework Coming Soon ...</h2>
+          </div>
+        </div>
+      </section>
+      <section class="pricing-section" id="pricing">
+        <div class="container">
+         <h2 class="section-title">Payment Plans</h2>
+         <p class="section-subtitle">
+      TrueNetwork offers a single, fully integrated platform.
+      Choose a billing plan that best fits your organization.
+        </p>
+
+        <div class="pricing-grid two-plans">
+
+      <!-- Monthly -->
+         <div class="pricing-card featured">
+           <div class="pricing-tier">Monthly</div>
+           <div class="pricing-badge">Most Flexible</div>
+
+           <div class="pricing-price">
+            <span class="price-amount">$20</span>
+            <span class="price-period">/month</span>
+           </div>
+
+           <ul class="pricing-features">
+             <li>Full access to the TrueNetwork platform</li>
+             <li>Organization discovery and advanced search</li>
+             <li>Structured organizational profiles and knowledge integration</li>
+             <li>Network mapping and collaboration insights</li>
+             <li>Framework-based analysis </li>
+             <li>Peer and funder discovery</li>
+             <li>Ongoing updates and shared intelligence</li>
+             <li>Cancel anytime</li>
+           </ul>
+
+           <a href="https://pln.planovative.ca"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-primary btn-block">
+  Start Monthly
+           </a>
+        </div>
+
+      <!-- Yearly -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Yearly</div>
+          <div class="pricing-badge success">Save 25%</div>
+          
+          <div class="pricing-price">
+           <span class="price-amount">$180</span>
+           <span class="price-period">/year</span>
+          </div>
+          <p class="pricing-note">Equivalent to $15/month</p>
+          <ul class="pricing-features">
+            <li>Everything included in the monthly plan</li>
+            <li>Environmental scanning and network development support</li>
+            <li>Consulting-led onboarding and implementation</li>
+            <li>Priority onboarding support</li>
+            <li>Best value for long-term partners</li>
+         </ul>
+
+         <a href="https://pln.planovative.ca"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-primary btn-block">
+  Select Yearly
+         </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How is TrueNetwork different from other nonprofit or charities directories?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>TrueNetwork is fundamentally different because it was designed to address critical gaps in how community-generated knowledge is organized and accessed. While traditional directories simply list organizations, TrueNetwork creates dedicated profiles that document activities, research outputs, and knowledge over time.</p>
+                <p>We reveal networks of collaboration and funding by analyzing knowledge outputs, integrate Government of Canada data from CRA and federal funding programs, and map all activities to theglobal and national frameworks. This creates a comprehensive, dynamic knowledge base not just a static directory that enables Truenetwork intelligence across Canada's nonprofit sector.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is my organization's profile included in TrueNetwork?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. TrueNetwork includes profiles for registered Canadian charities and non-charitable non-profit organizations, along with their publicly identifiable collaborators and funders, using information from publicly available sources.
+               </p>
+               <p>
+Because this information is drawn from public records, organizational profiles are created by default to support transparency, discovery, and sector-wide learning. Organizations can claim their profiles at any time to verify details, add context, and manage additional information they choose to share.
+               </p>
+               <p>
+Claiming a profile enables organizations to highlight their work, publish knowledge and resources, connect with peers across Canada, and stay informed about relevant activities, initiatives, and collaboration opportunities within their networks.
+               </p> 
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do you map organizations to different frameworks?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>TrueNetwork uses a hybrid approach that combines Artificial Intelligence analysis with human expert review to map organizations and their generated knowledge and activities to relevant frameworks. We analyze publicly available organizational documents, reports, and self-reported information using AI-assisted methods, and apply human review as a quality-assurance step.
+                </p>
+                <p>
+This process allows organizational activities, outputs, and initiatives to be mapped to specific framework dimensions, goals, and indicators. The approach ensures consistency, transparency, and accuracy across different national and global frameworks.
+                </p>
+                <p>
+Organizations can see which framework dimensions their current work contributes to, identify peer organizations working in similar areas, and recognize additional dimensions or gaps where their work could expand, collaborate, or advocate more effectively.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I use TrueNetwork for academic research?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+Yes. TrueNetwork is designed to support academic research, particularly in fields such as social sciences, public policy, health, urban studies, environmental studies, and the humanities, where community-generated knowledge and grey literature play a critical role.
+                </p>
+                <p>
+In addition to academic publications, researchers can use TrueNetwork to discover, organize, and analyze reports, evaluations, toolkits, and other knowledge produced by non-profit organizations, governments, and community networks. This helps address gaps that are often not captured in traditional academic databases.
+                </p>
+                <p>
+We offer dedicated academic access and support for universities, research labs, and individual researchers, including tools for structured grey literature review and framework-based analysis. To discuss research access or partnership opportunities, please contact us at <a href="mailto:info@planovative.ca">info@planovative.ca</a>.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How can TrueNetwork help us build, manage, and stay connected with our network?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+TrueNetwork supports organizations that need to build, manage, and stay connected with networks of non-profit organizations whether you are a funder, a government or public agency, a municipality, or a large non-profit coordinating community activity.
+                </p>
+                <p>
+    We begin by conducting professional environmental scanning to identify relevant organizations based on your geographic area, funding programs, policy priorities, or thematic focus. This can include existing grantees, partner organizations, or potential participants in new or emerging programs.
+                </p>
+                <p>
+    Each organization is supported through structured profiles that integrate their activities, produced knowledge, networks, and areas of focus. This allows you to better understand who is doing what, how organizations are connected, and where gaps or opportunities exist across your network.
+                </p>
+                <p>
+    TrueNetwork also provides ongoing communication and awareness tools that help you stay informed about new activities, documents, events, and initiatives shared by network members making it easier to monitor programs, support collaboration, and maintain active, connected networks over time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Connect with Canada's Nonprofit Network?</h2>
+            <p>Join thousands of organizations discovering new partnerships, peer networks, community-driven knowledge and proven solutions.</p>
+            <div class="cta-form">
+             <div class="form-group">
+              <input
+                type="email"
+                id="contactEmail"
+                placeholder="Enter your work email"
+                aria-label="Work email address"
+                required
+             />
+
+             <button
+              type="button"
+              class="btn btn-primary text-white-color"
+              onclick="openEmail()">
+                 <a href="mailto:info@planovative.ca"
+   class="btn btn-primary text-white-color">
+  Contact
+                 </a>
+             </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logos">
+              <div class="footer-logo">
+                <img src="assets/icon-finalized copy copy.png" alt="TrueNetwork" height="60" />
+              </div>
+              <div class="footer-logo">
+                <img src="assets/planovative-logo.png" alt="Planovative" height="60" />
+              </div>
+            </div>
+            <p class="footer-tagline">Connecting Canada's nonprofit sector through network intelligence.</p>
+          </div>
+          <div class="footer-column">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#sdgs">SDG Framework</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li>
+                 <a href="https://planovative.ca"
+     target="_blank"
+     rel="noopener noreferrer">
+    About Us
+                 </a>
+              </li>
+              <li>
+                 <a href="mailto:info@planovative.ca">
+                    Contact
+                 </a>
+              </li>
+              <li>
+                <a href="https://planovative.ca/privacy-policy"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                 Privacy Policy
+                </a>
+              </li>
+              <li>
+               <a href="https://planovative.ca/terms-of-use"
+                target="_blank"
+                rel="noopener noreferrer">
+                Terms of Service
+               </a>
+             </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links">
+         <a href="https://planovative.ca/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+           Privacy
+         </a>
+
+         <a href="https://planovative.ca/terms-of-use"
+           target="_blank"
+           rel="noopener noreferrer">
+          Terms
+         </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
